@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+
+\usepackage{paper}
+
+%commands
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\arabic{equation}}
+
+%title,author
+\title{\textbf{Review}\\
+Interior Product, Lie derivative and Wilson Line in the \textit{KBc} Subsector of Open String Field Theory
+}
+\author{Hiroyuki Hata and Daichi Takeda}
+\date{}
+\begin{document}
+{\Large\noindent
+[Brief Review\footnote{
+The reviewer: Daichi Takeda (takedai.gauge@gmail.com)
+}]\\[2mm]
+\textbf{Interior Product, Lie derivative and Wilson Line in the \textit{KBc} Subsector of Open String Field Theory
+}
+}
+
+\noindent
+\textbf{Author: Hiroyuki Hata and Daichi Takeda}
+
+\vspace{12pt}
+%%body
+\textit{KBc} algebra has been described classical solutions like tachyon condensation and multi-$\mathrm{D}p$ branes.
+These solutions have singularities as $K$ approaches $0$, but reproduce the exact energies expected by string theory.
+$K$, $B$ and $c$ are defined thorough
+\begin{align}
+	K = \int_{-i\infty}^{i\infty}\frac{\d z}{2\pi i}T(z),\quad
+	B =  \int_{-i\infty}^{i\infty}\frac{\d z}{2\pi i}b(z),\quad 
+	c = c(0),
+\end{align}
+where $T$ is the energy-momentum tensor, $b$ is the anti-ghost field, and $c$ is the ghost field.
+These operators are assumed to be in the sliver frame, which is the region related to the radial coordinate $\xi$ by $z = (2/\pi)\arctan \xi$ (see \cite{Okawa:2012ica} for the review).
+$K$, $B$ and $c$ satisfies the following relations with the BRST operator $Q_\mathrm{B}$:
+\begin{align}
+	&\cmt{K}{B} = 0,\quad
+	\acmt{B}{c} = 1,\quad
+	B^2 = 0,\quad
+	c^2 = 0,\\
+	&Q_\mathrm{B}K = 0,\quad
+	Q_\mathrm{B}B = K,\quad
+	Q_B\mathrm{B}c = cKc.
+\end{align}
+
+We addressed how to emerge Chan-Paton factors around the multi-$\mathrm{D}p$ brane solution found by Murata and Schnabl \cite{Murata:2011ex}.
+Comparing with the action with Chan-Paton factors, the fluctuation $\Delta\Psi$ around the solution of $N$ branes is expected to expanded by the modified form of vertex operators $V_a^\ddag\mathcal O_F(k) V_b$  with some operators $V_a\,(a = 1,\cdots,\,N)$ carrying no ghost.
+Then we find that the question becomes whether there exist $N$ operators $V_a$ satisfying
+\begin{align}
+	V_a(\overleftarrow Q_\mathrm{B}+\Psi_0) = 0\quad
+	\mathrm{and}\quad 
+	V_aV_b^\ddag = \delta_{ab},\label{eq:Va_coditions}
+\end{align}
+where $\Psi_0$ is the solution of $N$ branes and $A\overleftarrow Q_\mathrm{B} = -(-1)^{|A|}Q_\mathrm{B}A$.
+The similar equation for the former can be seen in Wilson lines of gauge theories, and the formal resemblance between SFT and Chern-Simons theory has been known,
+so we are driven to find the correspondence of Wilson line in SFT.
+
+In the process to find this, we established the \textit{KBc} manifold, which includes infinite sets of distinct $(K,B,c)$, of course satisfying \textit{KBc} algebra, as its points.
+On the manifold, we succeeded in finding the interior product, Lie derivative and Lie bracket.
+The Lie derivative gives infinitesimal deformations in the space of solutions.
+By using the interior product, we finally obtained a candidate for the SFT Wilson line.
+However, the task to solve \eqref{eq:Va_coditions} is still left, and the information about \textit{KBc} manifold may be not enough.
+For example, formulas for the interior product and the Lie derivative in the SFT side are slightly different from in the Chern-Simons side.
+
+%%%%%
+\bibliographystyle{jhep} 
+\bibliography{reference.bib}
+\end{document}
