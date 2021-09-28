@@ -47,14 +47,14 @@ The following relations called \textit{KBc} algebra are satisfied by $K,B,c$ and
 	Q_\mathrm{B}c = cKc.
 \end{align}
 Since any CFT has \textit{KBc} sector, any solution in \textit{KBc} sector is universal.
-Analytic solutions are studied by combining $K,B,c$ and some matter sectors as well.
-In this case, the solutions are not universal in general.
-The review paper \cite{Okawa:2012ica} is useful to learn KBc sector and universal solutions including tachyon vacuum.
+Other Analytic solutions are studied by combining \textit{KBc} sector with some matter operators,
+where solutions are not universal in general.
+The review paper \cite{Okawa:2012ica} is useful to learn \textit{KBc} sector and classical solutions including tachyon vacuum.
 
 We established the notion of the manifold in \textit{KBc} sector in the paper.
-A top-down approach is taken in this review, but a heuristic approach in the paper.
+A top-down approach is taken in this review, while a heuristic approach is in the paper.
 Let $\xi = (\xi^1,\xi^2)$ a two-component function, $\xi:\mathbb R_{\ge 0}\to \mathbb C^2$.\footnote{$\mathbb R_{\ge 0} = \{x\in\mathbb R|x\geqq 0\}$}
-Then it is easily confirmed that the new triad $(K(\xi),B(\xi),c(\xi))$ defined as follows also satisfies \textit{KBc} algebra:
+Then it is easily confirmed that the new triad $(K(\xi),B(\xi),c(\xi))$ defined as follows again forms \textit{KBc} algebra:
 \begin{align}
 	K(\xi) := e^{\xi^1(K)}K,\quad B(\xi) := e^{\xi^1(K)}B,\quad c(\xi) = e^{-i\xi^2(K)}ce^{-\xi^1(K)}Bce^{i\xi^2(K)}.
 \end{align}
@@ -66,19 +66,21 @@ We define \textit{KBc} manifold $\mathcal K$ as follows:
 \end{itemize}
 
 Next, we define the interior product $\mathcal I_X$, where $X = (X^1,X^2)$ is two-component function as the coordinate $\xi$ is.
-It is known that the action of bosonic open SFT (called Witten's action) has some similarities to the Chern-Simons (CS) action.
+It is known that the action of bosonic open SFT (called Witten's action) has similar structure to the Chern-Simons (CS) action.
 Especially, the ghost number in bosonic open SFT corresponds to the form number in CS theory.
 Therefore, we assume that $\mathcal I_X$ lower the ghost number by one.
-In addition, \textit{KBc} algebra should be broken by the operation of $\mathcal I_X$ at each point of $\mathcal K$.
+In addition, \textit{KBc} algebra should not be broken by the operation of $\mathcal I_X$ at each point of $\mathcal K$.\footnote{
+For example, $\mathcal I_X(\{B,c\}) = \mathcal I_X (1)$ should hold for the relation $\{B,c\} = 1$ not to be broken by introducing $\mathcal I_X$ to \textit{KBc} sector.
+}
 Under the two conditions,\footnote{
-We imposed more conditions in the original paper, for example nilpotency, but now it was turned out for these to be sufficient.}
+We imposed more conditions in the original paper, for example nilpotency, but now it was turned out for these to be sufficient to determine the forms of \eqref{eq:interior}.}
 the general form of the operation of $\mathcal I_X$ at $\xi$ is given by\footnote{
 Here $X^{1,2}$ can depend on the original $K$ not through $K(\xi)$, and the factor $1/K(\xi)$ accompanying $X^2$ is just for convenience to simplify the expression of the Lie derivative introduced in the next paragraph.
 }
 \begin{align}
 	\mathcal I_X K(\xi)= iB(\xi)X^1(K),\quad
 	\mathcal I_X B(\xi) = 0,\quad
-	\mathcal I_X c(\xi) = \l\{\frac{X^2(K)}{K(\xi)}B(\xi),c(\xi)\r\}.
+	\mathcal I_X c(\xi) = \l\{\frac{X^2(K)}{K(\xi)}B(\xi),c(\xi)\r\}.\label{eq:interior}
 \end{align}
 We further impose on the interior product Leibniz-rule
 \begin{align}
