@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+
+\usepackage{paper}
+
+%commands
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\arabic{equation}}
+
+\date{}
+
+\begin{document}
+{\Large\noindent
+[Brief Review\footnote{
+The reviewer: Daichi Takeda (takedai.gauge@gmail.com)
+}]\\[2mm]
+%title
+\textbf{Holographic Reconstruction of Bubbles\cite{Burda:2018rpb}
+}
+}
+
+\noindent
+\hfill
+\textbf{Philipp Burda, Ruth Gregory, Akash Jain}%author
+
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\setcounter{footnote}{0}
+\vspace{12pt}
+%%body
+This paper examined whether the two bulk reconstruction methods, the hole-ography method  \cite{Balasubramanian:2013lsa,Czech:2014ppa}, and the light-cone cuts method \cite{Engelhardt:2016wgb} , are valid for BTZ black hole and BTZ bubble the metrics of which are introduced below.
+In the each case, the boundary observable used in the reconstruction is originally calculated in the boundary, but it is calculated by using bulk geodesics; we assume the bulk metric first, and once the boundary observable is obtained, we forget the bulk metric in the reconstruction process.
+	Therefore, their work is to confirm whether these methods are valid, assuming that we know the boundary observables.
+
+BTZ black hole without charge and angular momentum is a $(2+1)$ dimensional black hole spacetime which asymptotes to $\mathrm{AdS}_3$:
+\begin{align}
+	\d s^2 = \frac{1}{z^2}\l[-(1-Mz^2)\d t^2 + \d x^2 + \frac{\ell^2}{1-Mz^2}\d z^2\r].
+\end{align}
+BTZ bubble metric is given by
+\begin{align}
+	\d s^2 = 
+	\l\{
+		\begin{array}{cc}
+			\displaystyle \frac{1}{z^2}\l[-(1-M_+z^2)\d t^2 + \d x^2 + \frac{\ell_+^2}{1-M_+z^2}\d z^2\r] & \mathrm{for}~z\le Z(\tau),\\[5mm]
+			\displaystyle\frac{1}{z^2}\l[-(1-M_-z^2)\d t^2 + \d x^2 + \frac{\ell_-^2}{1-M_-z^2}\d z^2\r] & \mathrm{for}~z\ge Z(\tau),
+		\end{array}
+	\r.
+\end{align}
+where $z = Z(\tau)$ is  a timelike hypersurface with timelike coordinate $\tau$, and called bubble.
+From some suitable conditions, they require
+\begin{align}
+	M_+ > M_-,\qquad \frac{\ell_+}{M_+} \geq \frac{\ell_-}{M_-}.
+\end{align}
+
+In the hole-orgraphy method spacelike geodesics are used to calculate Ryu-Takayanagi surfaces (1dim lines), and using Ryu-Takayanagi formula, the entanglement entropy $S(\alpha)$ is obtained as a function of the angle interval $\alpha$ on the boundary.
+The hole-ography method can reconstruct the points and their distances of the pure $\mathrm{AdS}_3$ bulk, but for the sake of applying it to other asymptotic $\mathrm{AdS}_3$ metric, the following is conjectured in \cite{Czech:2014ppa}.
+Each point on the time slice corresponds to a certain boundary function of the angular coordinate $\alpha(\theta)$, the support of which is the intersection of the time slice and the boundary.
+Function $\alpha(\theta)$ is the substitution of a bulk point, if and only if $\alpha(\theta)$ extremizes the action\footnote{The strong subadditivity of the entropy ensures $-\d^2S/d\alpha^2 > 0$.}
+\begin{align}
+	I[\alpha] = \int_0^{2\pi}\d\theta \sqrt{-\l. \frac{\d^2S}{\d\alpha^2}\r |_{\alpha = \alpha(\theta)}(1-\alpha'(\theta)^2)}~.
+\end{align}
+The Eular-Lagrange equation reads
+\begin{align}
+	2\alpha''(\theta)\l.\frac{\d^2S}{\d\alpha^2}\r|_{\alpha = \alpha(\theta)} + (1-\alpha'(\theta)^2)\l.\frac{\d^3S}{\d\alpha^3}\r|_{\alpha = \alpha(\theta)} = 0.
+\end{align}
+However, it turns out that this conjecture does not hold for BTZ bubble, while it hold for BTZ.
+They concluded that the hole-ography method isn't a generic one to reconstruct bulks.\footnote{I think there still remains a possibility that Ryu-Takayanagi formula does fail in general. We assumed Ryu-Takayanagi formula to get boundary entanglement entropy.}
+
+The light-cone cuts method on the other hand, succeeded to reconstruct the conformal metrics of both BTZ and BTZ bubble.
+They first used bulk null geodesics to obtain light-cone cuts.
+%
+% and the light-cone cuts method needs null geodesics.
+%Both geodesics can be analytically calculated in BTZ black hole and BTZ bubble space.
+%From the spacelike geodesics, the differential entropy \cite{Balasubramanian:2013lsa} can be calculated, because the Ryu-Takayanagi surfaces are lines in $(2+1)$ dimensional spacetime.
+%However, the reconstruction by the hole-ography method is not completed in this paper.
+%On the other hand, they calculated cuts from null geodesics, and succeeded in reconstructing the bulk conformal metrics in the both spacetimes.
+
+
+
+
+%%
+\bibliographystyle{jhep} 
+\bibliography{reference.bib}
+\end{document}

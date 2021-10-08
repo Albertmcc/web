@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+
+\usepackage{paper}
+
+%commands
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\arabic{equation}}
+
+\date{}
+
+\begin{document}
+{\Large\noindent
+[Brief Review\footnote{
+The reviewer: Daichi Takeda (takedai.gauge@gmail.com)
+}]\\[2mm]
+%title
+\textbf{Solutions from boundary condition changing operators in open string field theory\cite{Kiermaier:2010cf}
+}
+}
+
+\noindent
+\hfill
+\textbf{M. Kiermaier, Y. Okawa and P. Soler}%author
+
+\vspace{12pt}
+%%body
+The general form of analytic solution for regular marginal deformations is introduced by using the boundary condition changing (bcc) operators.
+The bcc operators $\sigma_L$ and $\sigma_R$ satisfy
+\begin{align}
+	\sigma_L(a)\sigma_R(b) = \exp\l[\lambda\int_a^b\d t\,V(t) \r],
+\end{align}
+where $V(t)$ is the primary operator with weight $1$, causing the marginal deformation.
+The bcc operators are assumed to be primary operators with weight $0$.
+The solution shown in this paper is given as follows:
+\begin{align}
+	\Psi = -\frac{1}{\sqrt{1-K}}(Q_\mathrm{B}\sigma_L)
+	\l[
+	\sigma_R + \frac{B}{1-K}Q_\mathrm{B}\sigma_R
+	\r]
+	\frac{1}{\sqrt{1-K}}.\label{eq:bcc_solution}
+\end{align}
+It can be confirmed that this is a pure-gauge solution.
+
+The BPZ inner product between the $\Psi$ in \eqref{eq:bcc_solution} and a generic state $\phi = -c\partial c\phi_m$ with $\phi_m$ being a matter primary operator of weight $0$, $\braket{\phi,\Psi}$ is important especially for the rolling tachyon.
+Because of the introduction of the bcc operator, this can be calculated by the factorization into the three-point correlation function $\braket{f\circ \phi_m(0)\sigma_L(a)\sigma_R(b)}$ and the ghost part with ghost number $3$.
+Both can be calculated because the three-point correlator of primary fields is fixed  in the 2-dim CFT, and the latter is usual calculations seen in the \textit{KBc} subalgebra.
+The result has the form
+\begin{align}
+	\braket{\phi,\Psi} = g(h) \braket{\phi_m(0)\sigma_L(1)\sigma_R(\infty)}_{\mathrm{matter,\,UHP}}
+\end{align}
+with $h$ being the weight of $\phi$, where $g(h)$ does not depend on $V$.
+This is applied for the rolling tachyon in section 4.
+
+
+
+%
+\bibliographystyle{jhep} 
+\bibliography{reference.bib}
+\end{document}

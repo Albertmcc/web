@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+
+\usepackage{paper}
+
+%commands
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\arabic{equation}}
+
+\date{}
+
+\begin{document}
+{\Large\noindent
+[Brief Review\footnote{
+The reviewer: Daichi Takeda (takedai.gauge@gmail.com)
+}]\\[2mm]
+%title
+\textbf{Bulk reconstruction of metrics with a compact space asymptotically \cite{Hernandez-Cuenca:2020ppu}
+}
+}
+
+\noindent
+\hfill
+\textbf{S. Hern'andez-Cuenca and G.T. Horowitz}%author
+
+\vspace{12pt}
+%%body
+The light-cone cut method \cite{Engelhardt:2016wgb,Engelhardt:2016crc} is extended to the spacetime with a compact space.
+Here again we focus on the past cuts.
+
+In order to reconstruct the bulk conformal metric by light-cone cuts, one have to collect inward null vectors at points on cuts, including the component of the compact space.
+Because the compact space shrinks up, the coordinate on $\mathbb S^k$ of $x \in C^-(p)$ is defined as asymptotical value of null geodesics, which is denoted by $\Phi(x)$.
+When the spacetime has compact space, although a point on a cut is not a caustic, the point would have two ore more null geodesics coming into the point.
+Therefore, we define the regular point on $C^-(p)$ as the point into which a unique null geodesic comes, in order to get well-defined asymptotical coordinate on $\mathbb S^k$.
+The set of regular points of $C^-(p)$ is written as $G^-(p)$.
+Then we define the past extended light-cone cuts as follows:
+\begin{align}
+	\mathcal C^-(p) = \{(x,\Phi(x))|\,x\in G^-(p)\}.
+\end{align}
+
+The similar proof to the one in \cite{Engelhardt:2016wgb} gives the fact that, when $\mathcal C^-(p)$ and $\mathcal C^-(q)$ intersect at exactly one point, then $p$ and $q$ are null related.
+Following the same process in the previous paper gives the light-cone of $P (\leftrightarrow C^-(p))$ in the space of past extended cuts, and determines the conformal metric at $P$, that is, the conformal metric at $p$.
+
+In this paper, the spacetime is assumed to be asymptotically $\mathrm{AdS}_n\times\mathbb S^k$, but  the asymptotical form of the compact space would be generalized (discussed in section 5).
+
+
+
+%%
+\bibliographystyle{jhep} 
+\bibliography{reference.bib}
+\end{document}

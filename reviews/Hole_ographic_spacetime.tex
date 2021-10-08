@@ -1,0 +1,139 @@
+\documentclass[12pt]{article}
+
+\usepackage{paper}
+
+%commands
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\arabic{equation}}
+\newcommand{\AdS}[0]{\textrm{AdS}}
+\newcommand{\CFT}[0]{\textrm{CFT}}
+
+\date{}
+
+\begin{document}
+{\Large\noindent
+[Brief Review\footnote{
+The reviewer: Daichi Takeda (takedai.gauge@gmail.com)
+}]\\[2mm]
+%title
+\textbf{A hole-ographic spacetime
+\cite{Balasubramanian:2013lsa}}
+}
+
+\noindent
+\hfill
+\textbf{Vijay Balasubramanian, Borun D. Chowdhury,}
+
+\hfill
+\textbf{Bartlomiej Czech, Jan de Boer, Michal P. Heller.}
+%author
+
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\setcounter{footnote}{0}
+\vspace{12pt}
+%%body
+
+For $\AdS_3/ \CFT_2$ correspondence, they defined differential entropy on the boundary  CFT, which gives the circumference of the hole in the bulk.
+The static coordinate of $\AdS_3$ is
+\begin{align}
+	\d s^2 = -\l(1+\frac{R^2}{L^2}\r)\d T^2 + \l(1 + \frac{R^2}{L^2}\r)^{-1}\d R^2 + R^2 \d \phi^2.
+\end{align}
+The boundary entanglement entropy $S(\alpha)$ is defined for any interval $I = (\theta - \alpha/2,\theta + \alpha/2)$ on the time slice $T=0$, where $\theta$ is the boundary angular coordinate. The entanglement entropy $S(\alpha)$ is calculated as
+\begin{align}
+	S(\alpha) = \frac{c}{3}\ln\l(\frac{2L}{\mu}\sin\alpha\r),
+\end{align}
+where $\mu$ is the UV cutoff.
+
+In the paper, they introduced ``differential entropy" as the modified version of the entanglement entropy, in which the UV regulator is removed.
+
+\noindent
+\textbf{Definition}~~
+Let $\alpha(\theta)$ be a function of $\theta$ defined on the time slice $T=0$ of the boundary $\CFT_2$.
+The differential entropy, which is a functional of $\alpha(\theta)$, is defined as
+\begin{align}
+	E[\alpha] := \frac{1}{2}\int_0^{2\pi}\d\theta\,\l.\frac{\d S(\alpha)}{\d \alpha}\r|_{\alpha = \alpha(\theta)}.
+\end{align}
+
+\noindent
+The differential entropy measures the circumference of the hole surrounded by the bulk closed curve $R = R(\phi)$, which is identified by the choice of $\alpha(\theta)$.
+This fact is briefly explained in the remaining of this review.
+
+First, let us see how $R(\phi)$ is related to $\alpha(\theta)$.
+For each point $\phi$ on $R=R(\phi)$, there is a unique geodesic on $T=0$ which is tangent to the curve at $\phi$.
+Each of such null geodesics parametrized by $\phi$ reaches the boundary points $\theta = \theta(\phi) \pm \alpha(\phi)$:
+\begin{align}
+	\alpha(\phi) &= \arctan\l[\frac{L}{R}\,\sqrt{1 + \frac{L^2}{R^2+L^2}\l(\frac{\d \ln R(\phi)}{\d\phi} \r)^2} \,\,\r],\\
+	\theta(\phi) &= \phi - \arctan\l[\frac{L^2}{R^2 + L^2}\frac{\d\ln R(\phi)}{\d \phi} \r].
+\end{align}
+These two equations relate the curve $R=R(\phi)$ to the interval function $\alpha(\theta)$.
+These formula are inverted to be
+\begin{align}
+	R(\theta) &= L\cot\alpha(\theta) \sqrt{\frac{1 + \alpha\p(\theta)^2\tan^2\alpha(\theta)}{1-\alpha\p(\theta)^2}},\label{eq:R}\\
+	\phi(\theta) &= \theta - \alpha\p(\theta)\tan\alpha(\theta).\label{eq:phi}
+\end{align}
+These inverted expressions are more important in the standpoint of describing the bulk by the boundary objects.
+
+Next, let us see the formula
+\begin{align}
+	E[\alpha] = \frac{\mathrm{circumference~of~}(R,\phi) = (R(\theta),\phi(\theta))}{4G}.\label{eq:conj}
+\end{align}
+To see this, we rewrite the right hand side by the bulk terms as
+\begin{align}
+	\mathrm{r.h.s.} = \int_0^{2\pi} \frac{\d\phi}{4G}\sqrt{\l(1 + \frac{R^2}{L^2}\r)^{-1}\l(\frac{\d R}{\d \phi}\r)^2 + R^2}.
+\end{align}
+Note that we should regard $\phi$ and $R(\phi)$ in this expression as $\phi(\theta)$ and $R(\theta)$ given by \eqref{eq:R} and \eqref{eq:phi}.
+Comparing each integrand of both hand sides in \eqref{eq:conj},
+\begin{align}
+	\mathrm{l.h.s.} &\rightarrow \frac{\d\theta}{2}\l.\frac{\d S(\alpha)}{\d\alpha}\r|_{\alpha = \alpha(\theta)},\\
+	\mathrm{r.h.s.} &\rightarrow \frac{\d\phi}{4G}\sqrt{\l(1 + \frac{R^2}{L^2}\r)^{-1}\l(\frac{\d R}{\d \phi}\r)^2 + R^2},
+\end{align}
+it is found that the integrand of r.h.s.\ is subtracted by that of l.h.s.\ to be $\d f$ with
+\begin{align}
+	f(\theta) := \l[\frac{L}{8G}\ln\l(\frac{\sin(\alpha(\theta)+\phi(\theta)-\theta)}{\alpha(\theta)-\phi(\theta) + \theta} \r) \r].
+\end{align}
+Therefore the formula \eqref{eq:conj} is shown, since this is an exact form.
+It is also shown that $f(\theta)$ is equal to the proper length along the space-like geodesic on $T=0$ between two points $\phi$ and $\theta(\phi)$ of $R = R(\phi)$.
+Then we get a corollary: let $L$ be a proper length of the bulk curve $\{(R,\phi) = (R(\theta),\phi(\theta))|\theta_i\le\theta\le \theta_f\}$, then
+\begin{align}
+	\frac{L}{4G} = \frac{1}{2}\int_{\theta_i}^{\theta_j}\d\theta\,\l.\frac{\d S(\alpha)}{\d \alpha}\r|_{\alpha = \alpha(\theta)}  + f(\theta_f) - f(\theta_i).
+\end{align}
+
+A heuristic approach is taken in their paper, and a brief but more concrete review appears in \cite{Czech:2014ppa}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%
+\bibliographystyle{jhep} 
+\bibliography{reference.bib}
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+
+\usepackage{paper}
+
+%commands
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\arabic{equation}}
+
+\date{}
+
+\begin{document}
+{\Large\noindent
+[Brief Review\footnote{
+The reviewer: Daichi Takeda (takedai.gauge@gmail.com)
+}]\\[2mm]
+%title
+\textbf{Title
+}
+}
+
+\noindent
+\hfill
+\textbf{}%author
+
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\setcounter{footnote}{0}
+\vspace{12pt}
+%%body
+
+
+%%
+\bibliographystyle{jhep} 
+\bibliography{reference.bib}
+\end{document}
