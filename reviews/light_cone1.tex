@@ -44,26 +44,23 @@ and two points $z_1, z_2$ in the past of $x_i$:
 \end{align}
 If we move $z_1$ and $z_2$ as the correlator diverges while keeping the momentum conservation,
 we see that $z_1$ and $z_2$ draw the past cut of bulk point null-separated from $x_i$.
-Since we do not know about the bulk geometry, we cannot know whose past cut it is.
-In principle, however, the past cut can be labeled by some $n$ parameters related to $x_i$.
-Let us set the parameters $\lambda = (\lambda^1,\cdots,\lambda^n)$ and denote the cut by $C^-_\lambda$.
-By repeating this step, all past cuts related one-to-one to points in $J^+(\partial M)\cap J^-(\partial M)$ can be collected, 
-then we define the vector space of $\lambda$'s, $\mathcal M^- := \{\lambda\}$.
 
-Let $\lambda_1,\lambda_2,\cdots$ be vectors on $\mathcal M^-$, 
-meaning that $C^-_{\lambda_1},C^-_{\lambda_2}\cdots$ are the past cuts.
-In the appendix, it is shown that, if $C^-_{\lambda_1} = C^-(p)$ and $C_{\lambda_2}^- = C^-(q)$ are tangent each other 
+Repeating the above process, we obtain the set of past cuts.
+However, since we do not know about the bulk geometry in the reconstruction process,
+we cannot know which bulk points corresponds to which past cuts.
+In principle, however, past cuts can be labeled by some $n$ parameters related to $x_i$.
+Then, let us use $\lambda = (\lambda^1,\cdots,\lambda^n)$ to denote past cuts as $C^-_\lambda$.
+The holographic interpretation is that $\lambda$ is a bulk point described in some coordinate,
+and we write the set of past cuts as $\mathcal M^-$.
+Our remaining task is to introduce a metric to $\mathcal M^-$ properly.
+
+It is shown in the appendix that, if $C^-(p)$ and $C^-(q)$ are tangent each other 
 precisely at one point, then $p$ and $q$ are null related.
-Therefore, taking a boundary point $x \in C^-_{\lambda_1}$ and collecting the past cuts tangent to $C^-_{\lambda_1}$ at $x$,
- the unique null geodesic from $p$ to $x$ via $q$ is obtained.
-Then we can identify this null geodesic to the one connecting $\lambda_1$ and other $\lambda$'s corresponding to 
-other cuts tangent to $C^-_{\lambda_1}$ at $x$, because of the existence of the one-to-one map from 
-$J^+(\partial M)\cap J^-(\partial M)$ to $\mathcal M^-$.
-Repeating this process for points on $C^-_{\lambda_1}$, we get null geodesics through $\lambda_1$, 
-and they form light-cone of $\lambda_1$ in $\mathcal M^-$.
+Thus, we should introduce the metric of $\mathcal M^-$ so that if $C^-_{\lambda}$ and $C^-_{\lambda'}$
+is tangent at one point, then $\lambda$ and $\lambda'$ is null-separated.
+This determines the causal structure of $\mathcal M^-$.
 
-Once the causal structure is introduced in $\mathcal M^-$, the conformal metric (the metric up to conformal factors) 
-can be determined.
+We can compute the conformal metric (the metric up to conformal factors) from the above property.
 The null generators at $\lambda\in \mathcal M^-$ are obtained by looking for other past cuts tangent to $C^-_{\lambda}$.
 Let $\sigma = (\sigma^1,\cdots,\sigma^{n-2})$ be the parameter describing the points on 
 $C^-_{\lambda}$ as $C^-_{\lambda}(\sigma) \in \partial M$.
@@ -71,13 +68,9 @@ The condition which $C^-_{\lambda_2}$ is tangent to $C^-_{\lambda_1}$ is as foll
 \begin{align}
 	\exists\sigma_1,~\exists\sigma_2,\quad C^-_{\lambda_1}(\sigma_1) = C^-_{\lambda_2}(\sigma_2)\quad\mathrm{and}\quad \l.\nabla_{\sigma} C^-_{\lambda_1}(\sigma)\r|_{\sigma = \sigma_1} = \l.\nabla_{\sigma} C^-_{\lambda_2}(\sigma) \r|_{\sigma = \sigma_2}.
 \end{align}
-A null generator $N$ at $\lambda$ satisfies the above condition for $\lambda_1 = \lambda$ and 
-$\lambda_2 = \lambda + \varepsilon N$, where $\varepsilon$ is any infinitesimal real variable.
-By solving the conditions, we can find out $n(n+1)/2$ generators at $\lambda$.
-Imposing the condition that the $n(n+1)/2$ null generators are null at $\lambda$ determines the metric at $\lambda$ up to
- conformal factors.
-Since $\mathcal M^-$ can be regarded as the copy of $J^+(\partial M)\cap J^-(\partial M)$, the reconstruction of
- the bulk metric has been completed now.
+By solving the conditions for $\lambda^1 = \lambda$ and $\lambda^2 = \lambda + \delta\lambda$ to 
+$\mathcal O(\delta\lambda)$, we obtain $n(n+1)/2$ vectors at $\lambda$.
+Since the vectors must be null, the conformal metric is uniquely determined.
 
 
 %%
