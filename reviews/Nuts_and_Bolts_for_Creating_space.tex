@@ -27,23 +27,29 @@ The reviewer: Daichi Takeda (takedai.gauge@gmail.com)
 \vspace{12pt}
 %%body
 
-They introduced the method to reconstruct the time slice surface of $\mathrm{AdS}_3$ from the differential entropy of $\mathrm{CFT}_2$ \cite{Balasubramanian:2013lsa} (see \href{https://albertmcc.github.io/web/reviews/Hole_ographic_spacetime.pdf}{\color{blue}my review}).
-Specifically they found the method to detect the bulk points and to measure the distances between two points on the same time slice.
-In their method, the distances between any timelike separated two points cannot be measured.
+They introduced the method to reconstruct a time slice surface of $\mathrm{AdS}_3$ from the differential entropy of 
+$\mathrm{CFT}_2$ \cite{Balasubramanian:2013lsa} 
+(see \href{https://albertmcc.github.io/web/reviews/Hole_ographic_spacetime.pdf}{\color{blue}my review}).
+Specifically they found the method to detect the bulk points and to measure the distances between two points 
+on the time slice.
+
 
 \noindent
 \textbf{The detection of points}
 
-Let $\alpha(\theta)$ be a boundary function introduced in \cite{Balasubramanian:2013lsa}, which is also seen in \href{https://albertmcc.github.io/web/reviews/Hole_ographic_spacetime.pdf}{\color{blue}my review}.\footnote{The notation adopted here is checked in  my review.}
+Let $\alpha(\theta)$ be a boundary function introduced in \cite{Balasubramanian:2013lsa}, which is also seen in 
+\href{https://albertmcc.github.io/web/reviews/Hole_ographic_spacetime.pdf}{\color{blue}my review}.\footnote{
+The notation adopted here is checked in  my review.}
 Any bulk closed curve $R = R(\phi)$ corresponds to a certain boundary function $\alpha(\theta)$.
-In the limit of the bulk curve shrinking, we get a point which is a center of the infinitesimal closed curve.
+In the limit of the bulk curve shrinking, the curve becomes a point.
 
-They interpreted this shrinking limit to $\alpha(\theta)$ to find the way to detect bulk points from the boundary as follows.
-First, note that the Gauss-Bonnet theorem states that the following relation holds in negatively curved space:
+They used this shrinking limit to find the way to detect bulk points from the boundary.
+First, Gauss-Bonnet theorem states that the following relation holds in negatively curved spaces:
 \begin{align}
 	\oint_{\partial A}\d\tau \sqrt{h}K = 2\pi - \int_A \d A\,R\ge 2\pi.\label{eq:Gauss}
 \end{align}
-Here $\partial A$ means the closed curve $R = R(\phi)$, $A$ is the area enclosed by the curve, $\d\tau\sqrt{h}$ is the line element along the curve, $K$ is the extrinsic curvature, and $\d A$ is the areal element.
+Here $\partial A$ means the closed curve $R = R(\phi)$, $A$ is the area enclosed by the curve, $\d\tau\sqrt{h}$ is the line
+ element along the curve, $K$ is the extrinsic curvature, and $\d A$ is the areal element.
 In the shrinking limit, we obtain
 \begin{align}
 	\lim_{A\to \mathrm{point}} ~\oint_{\partial A}\d\tau \sqrt{h}K = 2\pi.
@@ -53,12 +59,13 @@ In addition, the integrand of l.h.s.\ in \eqref{eq:Gauss} can be expressed by $\
 	\d\tau \sqrt{h} K = \frac{\d\theta\sqrt{1-\alpha'(\theta)^2}}{\sin\alpha(\theta)}.
 \end{align}
 
-From these facts, the boundary function $\alpha(\theta)$ corresponds to a certain bulk point if and only if it extremizes the functional
+From these facts, the boundary function $\alpha(\theta)$ corresponds to a certain bulk point 
+if and only if it extremizes the functional
 \begin{align}
 	I[\alpha] = \int_0^{2\pi}\d\theta \frac{\sqrt{1-\alpha'(\theta)^2}}{\sin\alpha(\theta)},\label{eq:action}
 \end{align}
-the Eular-Lagrange equation of which is a second order differential equation.
-Therefore, $\alpha(\theta)$ has two constants, which are necessary and sufficient to identify bulk points on a time slice.
+of which the Euler-Lagrange equation is a second order differential equation.
+Therefore, $\alpha(\theta)$ has two constants, which we regard as a bulk point on the time slice.
 Noting the relation
 \begin{align}
 	\frac{1}{\sin^2\alpha} = -\frac{2G}{L}\frac{\d^2S(\alpha)}{\d\alpha^2},
@@ -67,20 +74,23 @@ the action \eqref{eq:action} can be rewritten as
 \begin{align}
 	I[\alpha] = \int_0^{2\pi}\d\theta\,\sqrt{-\l.\frac{\d^2S(\alpha)}{\d\alpha^2}\r|_{\alpha = \alpha(\theta)}(1-\alpha'(\theta)^2)}~~.\label{eq:aaction}
 \end{align}
-They conjectured that this action also holds for any two-dimensional boundary theory dual to an asymptotically $\mathrm{AdS}_3$.
+They conjectured that this action also holds for other cases having the rotational symmetry.
 In other words, the collection of functions $\alpha(\theta)$ extremizing \eqref{eq:aaction} is the copy of the bulk points.
-The elements of the collection are called ``point function".
-A counterexample is discussed in \cite{Burda:2018rpb} (see \href{https://albertmcc.github.io/web/reviews/holographic_bubble.pdf}{\color{blue}my review}).
+The elements of the collection are called ``point function" here.\footnote{There is no specific terminology yet.}
+A counterexample is discussed in \cite{Burda:2018rpb} 
+(see \href{https://albertmcc.github.io/web/reviews/holographic_bubble.pdf}{\color{blue}my review}).
 
 
 \noindent
 \textbf{The measurement of distances}
 
-Next, let us introduce the notion of the distance which coincides with the bulk one, in the set of point functions $\mathcal P$.
+Next, let us see the holographic distances introduced by them, which is defined in the set of point functions $\mathcal P$.
 Now the differential entropy $E[\alpha]$ is used to define the distance.
 
-Let $\gamma_{AB}(\theta) := \min\{\alpha_A(\theta),\alpha_B(\theta)\}$ for all $\theta$ with $\alpha_A,\alpha_B\in\mathcal P$ ($\gamma$ is defined as a pointwise minimum among $\alpha_A$ and $\alpha_B$).
-The functional $d(A,B)$ defined as follows can be regarded as the distance between $A$ and $B$ measured in the units of $4G$:
+Let us define $\gamma_{AB}(\theta) := \min\{\alpha_A(\theta),\alpha_B(\theta)\}$ for $\alpha_A,\alpha_B\in\mathcal P$ 
+($\gamma$ is defined as a point-wise minimum among $\alpha_A$ and $\alpha_B$).
+The functional $d(A,B)$ defined as follows is the holographic distance between 
+$A$ and $B$ measured in the units of $4G$:
 \begin{align}
 	d(A,B) := \frac{1}{2}E[\gamma].\label{eq:dist}
 \end{align}
@@ -88,27 +98,33 @@ It is shown that this functional satisfies the axioms of a distance function.\fo
 Note that this is the distance defined on a time slice, so the distance is always positive.}
 
 In the remaining, we see why $d(A,B)$ can be regarded as the distance on the time slice.
-Let us assume that a generic boundary function $\alpha(\theta)$ has a point $\theta_k$ at which $\alpha'(\theta)$ jumps.
-From the corollary shown in \cite{Balasubramanian:2013lsa},\footnote{
-See the end of \href{https://albertmcc.github.io/web/reviews/Hole_ographic_spacetime.pdf}{\color{blue}my review}}
-we get the relation
+Let us consider that a boundary function $\alpha(\theta)$ has a point $\theta_k$ at which $\alpha'(\theta)$ jumps.
+From the corollary shown in \cite{Balasubramanian:2013lsa}, we have
 \begin{align}
 	E[\alpha] &= \frac{1}{2}\int_{0}^{\theta_k-0}\d\theta\,\l.\frac{\d S(\alpha)}{\d \alpha}\r|_{\alpha = \alpha(\theta)} + \frac{1}{2}\int_{\theta_k+0}^{2\pi}\d\theta\,\l.\frac{\d S(\alpha)}{\d \alpha}\r|_{\alpha = \alpha(\theta)}\nonumber\\[2mm]
 	&= \frac{(\mbox{left length}) + (\mbox{right length}) + (\mbox{geodesic length in } \phi(\theta_k-0)\leq \phi\leq \phi(\theta_k+0))}{4G}.
 \end{align}
-This means that the bulk curve $(R,\phi) = (R(\theta),\phi(\theta))$ corresponding to $\alpha(\theta)$ has a jump at $\theta$, and the relation
+This means that the bulk curve $(R,\phi) = (R(\theta),\phi(\theta))$ corresponding to $\alpha(\theta)$ has a jump at $\theta_k$,
+and the following holds with the curve compensated by the geodesic:
 \begin{align}
-	E[\alpha] = \frac{\mbox{length}}{4G}
+	E[\alpha] = \frac{\mbox{length}}{4G}.
 \end{align}
-still holds if the jump is smoothly complemented by the geodesic.
+The relation is introduced in \cite{Balasubramanian:2013lsa}.
+(see \href{https://albertmcc.github.io/web/reviews/Hole_ographic_spacetime.pdf}{\color{blue}my review}).
 
-Let $\gamma(\theta) = \min\{\alpha(\theta),\beta(\theta)\}$ with $\alpha$ and $\beta$ smooth.
-Generally, $\gamma$ has points at which $\gamma'(\theta)$ jumps, and these points correspond to the points $\gamma$ changes the value from $\alpha$ to $\beta$ or vice versa.
-Therefore, for each $\theta_0$ giving jumps, there must exist the geodesic which smoothly connects $(R_\alpha(\theta_0),\phi_\alpha(\theta_0))$ and $(R_\beta(\theta_0),\phi_\beta(\theta_0))$, where $(R_\alpha(\theta),\phi_\alpha(\theta))$ is a curve corresponding to $\alpha$ and $(R_\beta(\theta),\phi_\beta(\theta))$ to $\beta$.
-This means that there is a convex curve which covers $(R_\alpha(\theta),\phi_\alpha(\theta))$ and $(R_\beta(\theta),\phi_\beta(\theta))$ (see Figure 6 in \cite{Czech:2014ppa}).
-In the shrinking limit of $(R_\alpha(\theta),\phi_\alpha(\theta))\to A$ and $(R_\beta(\theta),\phi_\beta(\theta))\to B$, the convex curve becomes the identical two geodesic going from $A$ to $B$, by which we can verify \eqref{eq:dist}.
+Let us consider $\gamma(\theta) = \min\{\alpha(\theta),\beta(\theta)\}$ with $\alpha$ and $\beta$ smooth.
+Generally, $\gamma$ has points at which $\gamma'(\theta)$ jumps, and these points correspond to the points $\gamma$
+ changes the value from $\alpha$ to $\beta$ or vice versa.
+Therefore, for each $\theta_0$ at which $\gamma$ jumps, there must exist a geodesic which smoothly connects 
+$(R_\alpha(\theta_0),\phi_\alpha(\theta_0))$ and $(R_\beta(\theta_0),\phi_\beta(\theta_0))$, where 
+$(R_\alpha(\theta),\phi_\alpha(\theta))$ is a curve corresponding to $\alpha$ and $(R_\beta(\theta),\phi_\beta(\theta))$ to 
+$\beta$.
+This means that there is a convex curve which covers $(R_\alpha(\theta),\phi_\alpha(\theta))$ and 
+$(R_\beta(\theta),\phi_\beta(\theta))$ (see Figure 6 in \cite{Czech:2014ppa}).
+In the shrinking limit of $(R_\alpha(\theta),\phi_\alpha(\theta))\to A$ and $(R_\beta(\theta),\phi_\beta(\theta))\to B$, 
+the convex curve becomes the identical two geodesic going from $A$ to $B$, by which we can verify \eqref{eq:dist}.
 
-The applications to conical $\mathrm{AdS}_3$ and BTZ are also discussed in the paper.
+The extension to conical defect $\mathrm{AdS}_3$ and BTZ are also discussed in the paper.
 
 
 
