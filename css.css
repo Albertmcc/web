@@ -91,6 +91,15 @@ ul.tab {
     margin-right: 12pt;
 }
 
+.leftmgn{
+  margin-left: 12pt;
+}
+
+.rvtitle{
+  margin-top: 40pt;
+  margin-bottom: 12pt;
+}
+
 .noline{
   text-decoration: none;
 }
