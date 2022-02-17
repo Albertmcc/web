@@ -40,7 +40,6 @@ a.jump:hover{
   color: gray;
 }
 
-
 ul.jump{
 	list-style-type: none;
 }
@@ -162,7 +161,7 @@ ul.tab {
   color: blue;
 }
 
-a.noline:link, a.noline:active, a.noline:link{
+a.noline:link, a.noline:active, a.noline:visited{
   color: blue;
 }
 
