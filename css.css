@@ -15,7 +15,11 @@ div{
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-a{
+p{
+  margin:0pt;
+}
+
+a:link, a:visited, a:active {
   color: skyblue;
 }
 
@@ -23,19 +27,11 @@ a:hover{
   color: deepskyblue;
 }
 
-a:visited{
-  color: inherit;
-}
-
-a:active{
-  color: inherit;
-}
-
-a.title{
+a.title:link, a.title:visited,  a.title:active,  a.title:hover{
   color: peachpuff;
 }
 
-a.jump{
+a.jump:link,  a.jump:visited, a.jump:active{
   color: black;
   text-decoration-color: steelblue;
 }
@@ -49,16 +45,27 @@ ul.jump{
 	list-style-type: none;
 }
 
+li{
+  margin-bottom: 12pt;
+}
+
 li.jump::before{
   content:"-";
 }
 
 h2{
   color: peachpuff;
+  margin-bottom: 6pt;
 }
 
 h3{
   color: khaki;
+  margin-bottom: 0pt;
+  margin-top: 0pt;
+}
+
+.jpn{
+  font-size: 11pt;
 }
 
 .rvfieldcl{
@@ -141,6 +148,10 @@ ul.tab {
   margin-left: 12pt;
 }
 
+.lilleftmgn{
+  margin-left: 6pt;
+}
+
 .rvtitle{
   margin-top: 40pt;
   margin-bottom: 12pt;
@@ -151,8 +162,12 @@ ul.tab {
   color: blue;
 }
 
+a.noline:link, a.noline:active, a.noline:link{
+  color: blue;
+}
+
 a.noline:hover{
-  color: black;
+  color: darkblue;
 }
 
 p.abstract{
