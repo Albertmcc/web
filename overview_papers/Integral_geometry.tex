@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+
+\usepackage{paper}
+
+%commands
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\theequation}{\arabic{equation}}
+\newcommand{\overview}[1]{\href{#1}{\color{blue}my overview}}
+
+\date{}
+
+\begin{document}
+{\Large\noindent
+[Overview\footnote{
+Written by Daichi Takeda (takedai.gauge@gmail.com)
+}]
+\hfill{\normalsize last updated: \today}
+\\[2mm]
+%title
+\textbf{Integral Geometry and Holography\cite{Czech:2015qta}
+}
+}
+
+\noindent
+\hfill
+\textbf{Bartlomiej Czech, Lampros Lamprou, Samuel McCandlish, James Sully}%author
+
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\setcounter{footnote}{0}
+\vspace{12pt}
+%%body
+Hole-ography, which originates in \cite{Balasubramanian:2013lsa}, is known as a method to reconstruct the bulk geometry in AdS/CFT correspondence.
+In ref.\ \cite{Czech:2015qta}, they reinterpreted hole-ographic reconstruction formulas by a mathematic tool called \textit{kinematic space}, which is the space of oriented geodesics.
+By that, the geometric information of a time slice in AdS$_3$ can be considered to be encoded in the kinematic space, which is intrinsically a property of the boundary theory.
+
+As a warm-up, let us start with Euclidean $\mathbb R^2$.
+All geodesics, lines, in this space are written in the form $x\cos \theta + y\sin\theta - p = 0$.\footnote{
+Note that $|p|$ is the distance from the origin to the line.
+}
+The kinematic space is the space of all oriented geodesics, so we have to define the orientation of each line.
+If we continuously change the line from $(\theta,p)$ to $(\theta+\pi,-p)$, we see that the line comes back to the original one, with the formal endpoints at infinity exchanged.
+Therefore, we regard $(\theta+\pi,p)$ as the inversely oriented version of $(\theta,p)$.
+Then the kinematic space is characterized by the pair $(\theta,p)\in \mathbb R^2$ with the identification $\theta\sim \theta + 2\pi$.
+
+We can measure the length of an arbitrary curve $\gamma$ by calculating a volume form defined on the kinematic space $\mathcal K$.
+Crofton formula gives it as
+\begin{align}
+	\mbox{length of $\gamma$}=\frac{1}{4}\int_{\mathcal K}\omega\,n_\gamma(\theta,p),\qquad
+	\omega = \d\theta\wedge \d p,
+	\label{eq: Crofton}
+\end{align}
+where $n_\gamma(\theta,p)$ is the number of times the line $(\theta,p)$ intersects with $\gamma$.
+In the integral, $p$ runs over $\mathcal R$ and $\theta$ on $[0,2\pi]$.
+
+They applied the above story to the context of AdS$_3$/CFT$_2$.
+We consider a time slice $\Sigma$ on static asymptotically AdS$_3$ spacetime $M$ in global patch, and a curve $\gamma$ on $\Sigma$; the metric on $\partial M$ is $\d s^2 = -\d t^2 + L^2\d\theta^2$.
+Let $[u,v]$ be an interval of $\theta$ on $\partial \Sigma = \Sigma\cap \partial M$, and $S(u,v)$ be the length of the bulk geodesic connecting $u$ and $v$.
+Note that interval $[u,v]$ corresponds to the identical two geodesics having different orientations.
+Their conjecture is that, if we replace $\omega$ in \eqref{eq: Crofton} with
+\begin{align}
+	\omega = \frac{\partial^2 S(u,v)}{\partial u\partial v}\d u\wedge \d v,
+\end{align}
+then eq.\eqref{eq: Crofton} holds on $\Sigma$.
+
+The formula is correct  at least for any convex closed curve $\gamma$.
+To show this, we define $\ell(u)(>0)$ such that the geodesic corresponding to $[u,u+\ell(u)]$ is tangent to $\gamma$.
+Then, we see $n_\gamma(u,v) = 0$ for $v<u + \ell(u)$ and $n_\gamma(u,v) = 2$ for $v>u+\ell(u)$, and hence\footnote{
+The other factor $2$ comes from the two types of the orientation.
+}
+\begin{align}
+	\mbox{length of $\gamma$}
+	&=\frac{2\cdot 2}{4}\int_0^{2\pi}\d u\,\int_{u+\ell(u)}^{u+\pi}\d v\,\frac{\partial^2 S}{\partial u\partial v}=-\int_0^{2\pi}\d u\, \l.\frac{\partial S(u,v)}{\partial u}\r|_{v = u+\ell(u)}.
+	\label{eq: differential entropy}
+\end{align}
+Here we have used $(\partial_u S)|_{v = u\pm\pi} = 0$, which holds because the geodesic length is maximum when the interval length is $\pi$.\footnote{
+Comment: this statement is not true when the bulk has a hole like a black hole, thus \textcolor{red}{the conjecture must be modified for holographic theories having such bulks.}}
+Eq.\eqref{eq: differential entropy} is exactly the differential entropy formula (\overview{https://albertmcc.github.io/web/overview_papers/Hole_ographic_spacetime.pdf}) under Ryu-Takayanagi formula, and gives the right length of $\gamma$ according to \cite{Headrick:2014eia}.
+
+From the strong subadditivity, we can show that $\partial_u\partial_v S$ is always positive.
+The strong subadditivity is an inequality given by
+\begin{align}
+	S(AB) + S(BC) - S(B)-S(ABC) \geq 0.
+\end{align}
+If we choose $A,B$ and $C$ as
+\begin{align}
+	A=[u-\d u],\qquad
+	B=[u,v],\qquad
+	C = [v,v+\d v]
+\end{align}
+with $\d u,\d v>0$, then we have
+\begin{align}
+	S(u-\d u,v) + S(u,v+\d v) - S(u,v) - S(u-\d u,v+\d v)
+	=
+	\frac{\partial^2 S(u,v)}{\partial u\partial v}\d u\d v\geq 0.
+\end{align}
+
+Next, let us discuss how points on $\Sigma$ are interpreted in $\mathcal K$.
+As considered in \cite{Czech:2014ppa} (\overview{https://albertmcc.github.io/web/overview_papers/Nuts_and_Bolts_for_Creating_space.pdf}), using shrinking limit of closed curves is useful.
+If a closed curve $\gamma$ shrinks up to a point $A$, then for each $u$, only one $v$ makes geodesic $(u,v)$ intersect with $\gamma = A$.
+Let $v_A(u)$ denote the critical $v$, and the curve $v= v_A(u)$ on $\mathcal K$ called ``point-curve."
+Ref.\cite{Czech:2014ppa} have already given a conjecture to define point-curves from the boundary entanglement entropy, and in ref.\cite{Czech:2015qta}, the extension of it under the assumption that $\Sigma$ is Riemannian.
+
+Finally, the distance between any two points on $\Sigma$ is also given in terms of $\mathcal K$.
+Let $v_A(u)$ and $v_B(u)$ be point-curves on $\mathcal K$, and $\gamma_{AB}$ be the geodesic from $A$ to $B$.
+As depicted in fig.10 in \cite{Czech:2015qta}, if $v$ satisfies
+\begin{align}
+	\mathrm{min}\{v_A(u),v_B(u)\}\leq v \leq \mathrm{max}\{v_A(u),v_B(u)\}
+	\label{eq: vAvB}
+\end{align}
+for fixed $u$, then geodesic $(u,v)$ intersects with $\gamma_{AB}$ once, and does not intersect otherwise.\footnote{
+If we choose $\gamma_{AB}$ as the other curves connecting $A$ and $B$, there is a curve which intersects with $\gamma_{AB}$ twice.}
+Thus, from \eqref{eq: Crofton}, we conclude,
+\begin{align}
+	\mbox{geodesic length between $A$ and $B$} = 
+	\frac{2}{4}\int_0^{2\pi}\d u\int_{\mathrm{eq}.\eqref{eq: vAvB}}\d v.
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%
+\bibliographystyle{jhep} 
+\bibliography{reference.bib}
+
+\end{document}
