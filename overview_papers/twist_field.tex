@@ -51,8 +51,8 @@ In this case, we have
 		\int_{\mathcal R_n}\mathcal D\phi\,\exp\l[-\int_{\mathcal R_n}\d^2 w\,\mathcal L[\phi]\r],
 		\label{eq: R partition}
 \end{align}
-where $\mathcal R_n$ is the Riemann surface constructed by joining $n$ Riemann sheets at $A$ as the usual way, and $w$ is its coordinate.
-Since the Lagrangian density is local, \eqref{eq: R partition} can be re-written as
+where $\rho_A$ is the reduced density matrix, and $\mathcal R_n$ is the Riemann surface constructed by joining $n$ Riemann sheets at $A$ as the usual way with $w$ being its coordinate.
+Since the Lagrangian density is local, \eqref{eq: R partition} can be rewritten as
 \begin{align}
 	Z_{\mathcal R_n} = \int_\mathrm{B.C.}\mathcal D\phi_1\cdots\mathcal D\phi_n\,
 	\exp\l[-\int_{\mathbb C}\d^2 z\,(\mathcal L[\phi_1]+\cdots+\mathcal L[\phi_n])\r],
@@ -65,7 +65,7 @@ where B.C.\ denotes the boundary condition at $A$ on each sheet:
 	\phi_i(\sigma,+0) = \phi_i(\sigma,-0)\quad(\sigma\not\in A). 
 	\label{eq: BC}
 \end{align}
-Note that $i+n$-th and $i$-th sheet are identical on $\mathcal R_n$.
+Note that $i+n$-th and $i$-th sheets are identical on $\mathcal R_n$.
 
 The partition function \eqref{eq: n partition} is now a path integral of $n$ fields $\phi_i\,(i=1,\cdots,n)$, each of which are defined on the same complex plane $\mathbb C$ with \eqref{eq: BC}.
 We may expect that $Z_{\mathcal R_n}$ would be expressed by the operator insertions at $z=0$ and $z=u$ on $\mathbb C$, instead of using \eqref{eq: BC}.
@@ -85,7 +85,7 @@ where
 	\mathcal L[\phi_1](z)+\cdots+\mathcal L[\phi_n](z).
 	\label{eq: n lagrangian}
 \end{align}
-The correlator of the l.h.s.\ in \eqref{eq: twist} is defined on the theory of $\phi_i$'s on $\mathbb C$ without B.C.
+The correlator in the l.h.s.\ of \eqref{eq: twist} is defined on the theory of $\phi_i$'s on $\mathbb C$ without B.C.
 Twist operators $\mathcal T,\bar{\mathcal T}$ are in principle some composite operators of $\phi_i$'s.
 Assuming that $\mathcal T,\bar{\mathcal T}$ are primary\footnote{
 I could not understand whether or not twist operators do exist and are primary, but it seems reasonable to think it true according to \cite{Cardy:2007mb}.
@@ -102,8 +102,8 @@ Through map
 \begin{align}
 	z = \l(\frac{w}{w-u} \r)^{1/n},
 \end{align}
-the Riemann surface $\mathcal R_n$ is mapped to $\mathbb R$.
-The energy momentum tensor $T(\zeta)$ of $(\mathbb R,\mathcal L)$ is related with $T(w)$ as
+the Riemann surface $\mathcal R_n$ is mapped to $\mathbb C$.
+The energy momentum tensor $T(\zeta)$ of $(\mathbb C,\mathcal L)$ is related with $T(w)$ as
 \begin{align}
 	T(w) = \l(\frac{\partial \zeta}{\partial w}\r)^2T(z) + \frac{c}{12}\{\zeta,w\},
 	\label{eq: T(w)}
@@ -124,13 +124,13 @@ In concrete, we have
 \begin{align}
 	\braket{T(z)}_{\mathcal R_n,\mathcal L} 
 	= \frac{\braket{\mathcal T_n(0)\bar{\mathcal T}_n(u)T_j(z)}_{\mathbb C,\mathcal L^{(n)}}}
-	{\braket{\mathcal T_n(0)\bar{\mathcal T}_n(u)}_{\mathbb C,\mathcal L^{(n)}}}
+	{\braket{\mathcal T_n(0)\bar{\mathcal T}_n(u)}_{\mathbb C,\mathcal L^{(n)}}},
 \end{align}
-for $z$ describing $j$-th sheet.\footnote{
-I used $w$ to describe the coordinate of $\mathcal R_n$, but now used $z$ to describe the coordinate of $\mathbb C$.
-Note that $\mathcal R_n$ can be described by the pair $(j,z)$.
+where, with $z$ covering $j$-th sheet in the r.h.s.,\footnote{
+I used $w$ for the coordinate of $\mathcal R_n$, but now used $z$ for the coordinate of $\mathbb C$.
+Note that $\mathcal R_n$ is expressed by the pair $(j,z)$.
 }
-Here $T(w)$ corresponds to $T_j(w)$ which is defined by $\mathcal L[\phi_j]$ in theory $(\mathbb C,\mathcal L^{(n)})$.
+$T(z)$ corresponds to $T_j(z)$ which is defined by $\mathcal L[\phi_j]$ in theory $(\mathbb C,\mathcal L^{(n)})$.
 
 Since the energy momentum tensor of the whole theory of $(\mathbb C,\mathcal L^{(n)})$, $T^{(n)}$, is given by the summation of $T_j$,\footnote{
 Note that $T^{(n)}$ is defined by $\mathcal L^{(n)}$ of \eqref{eq: n lagrangian}.
@@ -142,7 +142,7 @@ we get
 	=
 	\frac{nc}{24}\l(1-\frac{1}{n^2}\r)\frac{u^2}{w^2(w-u)^2}.
 \end{align}
-From the usual formula\footnote{Since theory $(\mathbb C,\mathcal L^{(n)}$ must be rotational invariant, the}
+From the usual formula%\footnote{Since theory $(\mathbb C,\mathcal L^{(n)}$ must be rotational invariant, the}
 \begin{align}
 	&\braket{\mathcal T_n(a)\bar{\mathcal T}_n(b)T^{(n)}(z)}_{\mathbb C,\mathcal L^{(n)}}=\nonumber\\
 	&\qquad
@@ -150,7 +150,7 @@ From the usual formula\footnote{Since theory $(\mathbb C,\mathcal L^{(n)}$ must 
 	+\frac{1}{z-b}\frac{\partial}{\partial b} + \frac{d_n}{(w-b)^2} \r)
 	\braket{\mathcal T_n(a)\bar{\mathcal T}_n(b)}_{\mathbb C,\mathcal L^{(n)}}
 \end{align}
-with \eqref{eq: TT}, the weight now can be identified:
+and \eqref{eq: TT}, the weight can now be identified as
 \begin{align}
 	d_n = \frac{c}{12}\l(n-\frac{1}{n}\r).\label{eq: scaling}
 \end{align}
@@ -173,7 +173,7 @@ Applying the conformal transformation to $\braket{\mathcal T_n(a)\bar{\mathcal T
 	\mathrm{i.e.}\qquad
 	S_{A'} = \frac{c}{3}\log\l(\frac{L}{a \pi}\sin\frac{v\pi}{L}\r) - c_1'.
 \end{align}
-The entropy of thermalized CFT$_2$ can also be computed by following the same process.
+The entropy of thermal CFT$_2$ can also be computed by following the same process.
 In this case, we compactify the $\tau$-direction.
 
 
