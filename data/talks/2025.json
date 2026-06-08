@@ -1,0 +1,64 @@
+{
+  "international": [
+    {
+      "title": "\"Machine-learning emergent spacetime from linear response\"",
+      "venue": "UNIST International Workshop on Machine Learning for Quantum Fields and Geometry 2025, Day 2",
+      "date": "Sep. 2025",
+      "badges": ["invited"],
+      "links": [
+        {
+          "label": "web (video available)",
+          "href": "https://rakkyeongseong.github.io/mlquantumgeometry2025/talks.html",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_UNIST_ML_spacetime.pdf"
+        }
+      ]
+    }
+  ],
+  "domestic": [
+    {
+      "title": "\"Lindblad dynamics in holography\"",
+      "venue": "場の理論と弦理論2025",
+      "date": "2025年7月28日",
+      "links": [
+        {
+          "label": "web",
+          "href": "http://www2.yukawa.kyoto-u.ac.jp/~qft.web/2025/",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "https://www2.yukawa.kyoto-u.ac.jp/~qft.web/2025/slides/takeda-daichi.pdf",
+          "external": true
+        }
+      ]
+    },
+    {
+      "title": "「ホログラフィーに基いたブラックホール熱力学への熱と仕事の導入」",
+      "venue": "日本物理学会 2025年春季大会, 19aS1-11",
+      "date": "2025年3月",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/JPS2025_heat_work_takeda.pdf"
+        }
+      ]
+    }
+  ],
+  "seminar": [
+    {
+      "title": "「Lindblad力学のホログラフィック双対」",
+      "venue": "中央大学 素粒子論研究室 セミナー",
+      "date": "2025年6月16日",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_chuoU_Lindblad.pdf"
+        }
+      ]
+    }
+  ]
+}

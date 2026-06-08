@@ -1,0 +1,50 @@
+{
+  "international": [
+    {
+      "title": "\"Interior product, Lie derivative and Wilson line in KBc subsector of open string theory\"",
+      "venue": "Strings and Fields 2021, Day 5",
+      "date": "Aug. 2021",
+      "links": [
+        {
+          "label": "web",
+          "href": "http://www2.yukawa.kyoto-u.ac.jp/~qft.web/2021/",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_strings_and_fields_2021.pdf"
+        }
+      ]
+    }
+  ],
+  "domestic": [
+    {
+      "title": "「開弦の場の理論のKBcセクターにおける内部積，Lie微分の構成とWilson line」",
+      "venue": "日本物理学会 2021年秋季大会, 16aS1",
+      "date": "2021年9月",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_shuukitaikai_2021.pdf"
+        }
+      ]
+    },
+    {
+      "title": "「開弦の場の理論のKBcセクターにおける多様体構造の研究」",
+      "venue": "原子核三者若手 夏の学校2021, 研究会4-A",
+      "date": "2021年8月",
+      "links": [
+        {
+          "label": "web",
+          "href": "http://www2.yukawa.kyoto-u.ac.jp/~sansha.wakate/school2021/particle.html",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_natsugaku_2021.pdf"
+        }
+      ]
+    }
+  ],
+  "seminar": []
+}

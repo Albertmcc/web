@@ -1,0 +1,75 @@
+{
+  "international": [
+    {
+      "title": "\"A Lindbladian for holographic Brownian motion\"",
+      "venue": "Holo-Asia 2026",
+      "date": "June 2026",
+      "badges": ["invited"],
+      "links": [
+        {
+          "label": "web",
+          "href": "https://sites.google.com/view/holo-asia2026/home",
+          "external": true
+        }
+      ]
+    },
+    {
+      "title": "\"Work distribution and fluctuation theorem in AdS/CFT\"",
+      "venue": "Holographic Universe 2026, Poster session",
+      "date": "May 2026",
+      "badges": ["poster"],
+      "links": [
+        {
+          "label": "web",
+          "href": "https://sites.google.com/view/holographicuniverse2026?usp=sharing",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_holographic_DFT_poster.pdf"
+        }
+      ]
+    }
+  ],
+  "domestic": [],
+  "seminar": [
+    {
+      "title": "\"Cooking up holographic black holes\"",
+      "venue": "RIKEN iTHEMS",
+      "date": "Apr. 27, 2026",
+      "links": [
+        {
+          "label": "web",
+          "href": "https://ithems.riken.jp/ja/events/cooking-up-holographic-black-holes",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_Cooking_BH_RIKEN.pdf"
+        }
+      ]
+    },
+    {
+      "title": "「AdS/CFTにおける仕事分布とゆらぎの定理」",
+      "venue": "日本大学 素粒子論研究室 セミナー",
+      "date": "2026年1月23日",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_AdS_CFT_FT_Nichidai.pdf"
+        }
+      ]
+    },
+    {
+      "title": "「Lindblad力学のホログラフィック双対」",
+      "venue": "立教大学 理論物理学研究室 コロキウム",
+      "date": "2026年1月20日",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_RikkyoU_Lindblad.pdf"
+        }
+      ]
+    }
+  ]
+}

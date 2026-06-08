@@ -1,0 +1,22 @@
+{
+  "international": [],
+  "domestic": [
+    {
+      "title": "「Hawking輻射の機構」",
+      "venue": "素粒子若手オンライン研究会2020, セッションA-1",
+      "date": "2020年8月",
+      "links": [
+        {
+          "label": "web",
+          "href": "https://sites.google.com/view/wakate-soryushi-2020",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_soryuushi_wakate_online_2020.pdf"
+        }
+      ]
+    }
+  ],
+  "seminar": []
+}

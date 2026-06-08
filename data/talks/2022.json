@@ -1,0 +1,45 @@
+{
+  "international": [],
+  "domestic": [
+    {
+      "title": "「AdS/CFT対応における3次元のバルク再構築に向けて」",
+      "venue": "原子核三者若手 夏の学校2022, セッションA-4",
+      "date": "2022年8月",
+      "links": [
+        {
+          "label": "web",
+          "href": "http://www2.yukawa.kyoto-u.ac.jp/~sansha.wakate/school2022/index.html",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_natsugaku_2022.pdf"
+        }
+      ]
+    },
+    {
+      "title": "「静的な漸近AdS3時空のバルク再構築」",
+      "venue": "日本物理学会 2022年年次大会, 16aA531-8",
+      "date": "2022年3月",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_nenjitaikai_2022.pdf"
+        }
+      ]
+    }
+  ],
+  "seminar": [
+    {
+      "title": "「量子重力実験に向けた時空創発リングの探索」",
+      "venue": "第4回CHS物理学科研究セミナー, 日本大学文理学部",
+      "date": "2022年12月15日",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_nichidai_SEM_2022.pdf"
+        }
+      ]
+    }
+  ]
+}

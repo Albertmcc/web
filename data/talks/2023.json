@@ -1,0 +1,46 @@
+{
+  "international": [],
+  "domestic": [
+    {
+      "title": "「量子臨界物質と機械学習で目指す卓上量子重力実験」",
+      "venue": "学術変革領域「学習物理」物性関係討論会",
+      "date": "2023年7月27日",
+      "links": []
+    },
+    {
+      "title": "「卓上量子重力実験に向けた時空創発リングの探索」",
+      "venue": "日本物理学会 2023年春季大会, 24aS1-7",
+      "date": "2023年3月24日",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_JPSspring_SEM.pdf"
+        }
+      ]
+    }
+  ],
+  "seminar": [
+    {
+      "title": "\"Spacetime-emergent ring toward tabletop quantum gravity experiments\"",
+      "venue": "Osaka University seminar",
+      "date": "May 16, 2023",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_SEM_OsakaUniv.pdf"
+        }
+      ]
+    },
+    {
+      "title": "「ホログラフィックな時空へのヌル測地線生成」",
+      "venue": "立教大学理学部 理論物理学研究室 コロキウム",
+      "date": "2023年4月25日",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_shooting_rikkyo.pdf"
+        }
+      ]
+    }
+  ]
+}

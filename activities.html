@@ -1,399 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Daichi Takeda's page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daichi Takeda | Activities</title>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <meta name="description" content="Activities of Daichi Takeda: papers, awards, talks, seminars, and workshops.">
     <link rel="stylesheet" href="css.css">
+    <script src="activities.js" defer></script>
   </head>
 
   <body>
-    <h1><span class="mgn">
-    <img class="tarou" src="tarou2.jpeg" width="50" alt="photo of my dog">
-      Daichi Takeda</span>&#150; Activities &#150;</h1>
-    <header>
-      <ul class="tab">
-        <li class="tab btn4">
-          <a class="noline" href="index.html">Home</a>
-        </li><br />
-        <li class="tab btn4 btn2">
-          <a class="noline" href="activities.html">Activities</a>
-        </li>
-        <!-- <br />
-        <li class="tab btn4">
-          <a class="noline" href="overview.html">Papers of Interest</a>
-        </li> -->
-      </ul>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="activities.html">Activities</a>
+      </nav>
     </header>
 
-    <div>
-      <h2>
-        <span class="mgn">Papers</span>
-        <span style="font-size:12pt" class="leftmgn" >
+    <main class="page">
+      <section class="name-card">
+        <img class="avatar-large" src="tarou2.jpeg" width="112" height="112" alt="photo of my dog">
+        <div>
+          <h1>Activities</h1>
+          <p class="jpn-name">Daichi Takeda</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Papers</h2>
+        <p class="link-row">
           <a href="https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=a%20Daichi%20Takeda">
             INSPIRE-HEP "a Daichi Takeda"
           </a>
-        </span>
-      </h2>      
-    </div>
+        </p>
+      </section>
 
-    <div>
-      <h2>Awards</h2>
-        <ul>
+      <section class="card">
+        <h2>Awards</h2>
+        <ul class="activity-list">
           <li>
-            日本物理学会 2024年年次大会 学生優秀発表賞「AdS/CFTに基づいた動的ブラックホールの粗視化エントロピーの提案」
-         </li>
-       </ul>
-      </h2>
-    </div>
-
-    <div>
-      <h2>Talks</h2>
-      <h3>International conference</h3>
-      (newest first)
-        <ul>
-          <!-- <li>
-            title,seminar,session,date.
-            <br />
-            <a class="mgn" href="">
-              web
-            </a>
-            <a class="mgn" href="">
-              slide
-            </a>
-          </li> -->
-
-          <li>
-            "A Lindbladian for holographic Brownian motion", Holo-Asia 2026, June 2026 <b>(invited)</b>.
-            <br />
-            <a class="mgn" href="https://sites.google.com/view/holo-asia2026/home">
-              web
-            </a>
-            <a class="mgn" href="">
-              slide (to be prepared)
-            </a>
-          </li>
-
-          <li>
-            <p class="jpn">
-              "Work distribution and fluctuation theorem in AdS/CFT", Holographic Universe 2026, Poster session, May 2026.
-            </p>
-              <a class="mgn" href="https://sites.google.com/view/holographicuniverse2026?usp=sharing">
-                web
-              </a>
-              <a class="mgn" href="slides/takeda_holographic_DFT_poster.pdf">
-                slide
-              </a>
-            </li>
-  
-         <li>
-            "Machine-learning emergent spacetime from linear response", UNIST International Workshop on Machine Learning for Quantum Fields and Geometry 2025, Day 2, Sep. 2025 <b>(invited)</b>.
-            <br />
-            <a class="mgn" href="https://rakkyeongseong.github.io/mlquantumgeometry2025/talks.html">
-              web (video available)
-            </a>
-            <a class="mgn" href="slides/takeda_UNIST_ML_spacetime.pdf">
-              slide
-            </a>
-          </li>
-
-          <li>
-            "Coarse-graining black holes out of equilibrium with boundary observables on time slice", A Day of Deep Learning and High Energy Theory, Northeastern University, Mar. 21, 2024.
-            <br />
-            <a class="mgn" href="https://docs.google.com/document/d/16lCSYmWyTK-LlnzhwgxMoHnyy57tRblSgbJp3URwJRY/edit">
-              web
-            </a>
-            <a class="mgn" href="slides/takeda_northearstern_2024.pdf">
-              slide
-            </a>
-          </li>
-
-          <li>
-            "Interior product, Lie derivative and Wilson line in KBc subsector of open string theory", Strings and Fields 2021, Day 5, Aug. 2021.
-            <br />
-            <a class="mgn" href="http://www2.yukawa.kyoto-u.ac.jp/~qft.web/2021/">
-              web
-            </a>
-            <a class="mgn" href="slides/takeda_strings_and_fields_2021.pdf">
-              slide
-            </a>
+            日本物理学会 2024年年次大会 学生優秀発表賞
+            「AdS/CFTに基づいた動的ブラックホールの粗視化エントロピーの提案」
           </li>
         </ul>
+      </section>
 
-      <h3>Domestic conference</h3>
-      (newest first)
-        <ul>
-          <!-- <li>
-          <p class="jpn">
-            「title」,seminar,session,date.
+      <section class="card">
+        <h2>Talks</h2>
+
+        <div id="talks-root" class="talks-root">
+          <p class="loading-note">Loading talks...</p>
+        </div>
+
+        <noscript>
+          <p class="empty-note">
+            JavaScript is required to display talks grouped by year.
           </p>
-            <a class="mgn" href="">
-              web
-            </a>
-            <a class="mgn" href="">
-              slide
-            </a>
-          </li> -->
-                  
-          <li>
-            <p class="jpn">
-             "Lindblad dynamics in holography", 場の理論と弦理論2025, 2024年7月28日.
-            </p>
-            <a class="mgn" href="http://www2.yukawa.kyoto-u.ac.jp/~qft.web/2025/">
-              web
-            </a>
-             <a class="mgn" href="https://www2.yukawa.kyoto-u.ac.jp/~qft.web/2025/slides/takeda-daichi.pdf">
-              slide
-             </a>
-          </li>
-
-          <li>
-            <p class="jpn">
-              「ホログラフィーに基いたブラックホール熱力学への熱と仕事の導入」,
-              日本物理学会 2025年春季大会,
-              19aS1-11,
-              2025年3月.
-            </p>
-            <a class="mgn" href="slides/JPS2025_heat_work_takeda.pdf">
-              slide
-            </a>
-          </li>
-        
-          <li>
-            <p class="jpn">
-              「AdS/CFTに基づいた動的ブラックホールの粗視化エントロピーの提案」,
-              日本物理学会 2024年年次大会,
-              16aWA103-9,
-              2024年9月.
-              <b>（学生優秀発表賞受賞）</b>
-            </p>
-            <a class="mgn" href="slides/takeda_JPSautumn_BHT.pdf">
-              slide
-            </a>
-          </li>
-
-          <li>
-          <p class="jpn">
-            "Coarse-graining black holes out of equilibrium with boundary observables on time slice", 場の理論と弦理論2024, 2024年8月7日.
-          </p>
-            <a class="mgn" href="http://www2.yukawa.kyoto-u.ac.jp/~qft.web/2024/">
-              web
-            </a>
-            <a class="mgn" href="slides/takeda_場の理論と弦理論2024.pdf">
-              slide
-            </a>
-          </li>
-
-          <li>
-          <p class="jpn">
-            「量子臨界物質と機械学習で目指す卓上量子重力実験」,学術変革領域「学習物理」物性関係討論会,2023年7月27日.
-          </p>
-            <a class="mgn" href="">
-              web
-            </a>
-            <a class="mgn" href="">
-              slide
-            </a>
-          </li>
-
-          <li>
-          <p class="jpn">
-            「卓上量子重力実験に向けた時空創発リングの探索」, 日本物理学会 2023年春季大会, 24aS1-7, 2023年3月24日.
-          </p>
-            <a class="mgn" href="slides/takeda_JPSspring_SEM.pdf">
-              slide
-            </a>
-          </li>
-
-          <li>
-          <p class="jpn">
-            「AdS/CFT対応における3次元のバルク再構築に向けて」,
-            原子核三者若手 夏の学校2022,
-            セッションA-4,
-            2022年8月.
-          </p>
-            <a class="mgn" href="http://www2.yukawa.kyoto-u.ac.jp/~sansha.wakate/school2022/index.html">
-              web
-            </a>
-            <a class="mgn" href="slides/takeda_natsugaku_2022.pdf">
-              slide
-            </a>
-          </li>
-
-          <li>
-            <p class="jpn">
-              「静的な漸近AdS<sub>3</sub>時空のバルク再構築」,
-              日本物理学会 2022年年次大会,
-              16aA531-8,
-              2022年3月.
-            </p>
-            <a class="mgn" href="slides/takeda_nenjitaikai_2022.pdf">
-              slide
-            </a>
-          </li>
-
-          <li>
-            <p class="jpn">
-              「開弦の場の理論のKBcセクターにおける内部積，Lie微分の構成とWilson line」，日本物理学会　2021年秋季大会，16aS1，2021年9月．
-            </p>
-            <a class="mgn" href="slides/takeda_shuukitaikai_2021.pdf">
-              slide
-            </a>
-          </li>
-
-          <li>
-            <p class="jpn">
-              「開弦の場の理論のKBcセクターにおける多様体構造の研究」, 原子核三者若手　夏の学校　2021, 研究会4-A, 2021年8月.
-            </p>
-            <a class="mgn" href="http://www2.yukawa.kyoto-u.ac.jp/~sansha.wakate/school2021/particle.html">
-              web
-            </a>
-            <a class="mgn" href="slides/takeda_natsugaku_2021.pdf">
-              slide
-            </a>
-          </li>
-
-          <li>
-            <p class="jpn">
-              「Hawking輻射の機構」, 素粒子若手オンライン研究会2020, セッションA-1, 2020年8月.
-            </p>
-            <a class="mgn" href="https://sites.google.com/view/wakate-soryushi-2020">
-              web
-            </a>
-            <a class="mgn" href="slides/takeda_soryuushi_wakate_online_2020.pdf">
-              slide
-            </a>
-          </li>
-        </ul>
-
-        <h3>Seminar</h3>
-        (newest first)
-          <ul>
-            <!-- <li>
-              title,seminar,session,date.
-              <br />
-              <a class="mgn" href="">
-                web
-              </a>
-              <a class="mgn" href="">
-                slide
-              </a>
-            </li> -->
-
-            <li>
-              "Cooking up holographic black holes", RIKEN iTHEMS, Apr. 27, 2026.
-              <br />
-              <a class="mgn" href="https://ithems.riken.jp/ja/events/cooking-up-holographic-black-holes">
-                web
-              </a>
-              <a class="mgn" href="slides/takeda_Cooking_BH_RIKEN.pdf">
-                slide
-              </a>
-            </li>
-
-            <li>
-              「AdS/CFTにおける仕事分布とゆらぎの定理」,日本大学　素粒子論研究室　セミナー, 2026年1月23日.
-              <br />
-              <a class="mgn" href="slides/takeda_AdS_CFT_FT_Nichidai.pdf">
-                slide
-              </a>
-            </li>
-
-            <li>
-              「Lindblad力学のホログラフィック双対」, 立教大学　理論物理学研究室　コロキウム, 2026年1月20日.
-              <br />
-              <a class="mgn" href="slides/takeda_RikkyoU_Lindblad.pdf">
-                slide
-              </a>
-            </li>
-
-            <li>
-              「Lindblad力学のホログラフィック双対」, 中央大学　素粒子論研究室　セミナー, 2025年6月16日.
-              <br />
-              <a class="mgn" href="slides/takeda_chuoU_Lindblad.pdf">
-                slide
-              </a>
-            </li>
-
-            <li>
-              <p class="jpn">
-                "Coarse-graining black holes out of equilibrium with boundary observables on time slice", seminar at YITP, May 31st, 2024.
-              </p>
-                <a class="mgn" href="https://www.yukawa.kyoto-u.ac.jp/seminar/s53302">
-                  web
-                </a>
-                <a class="mgn" href="slides/takeda_YITP_BHthermo.pdf">
-                  slide
-                </a>
-            </li>
-
-            <li>
-              <p class="jpn">
-                「AdS/CFTを用いた非平衡ブラックホールのエントロピーの提案」, 中央大学　素粒子論研究室　セミナー, 2024年4月2日.
-              </p>
-                <a class="mgn" href="slides/takeda_chuoU_BHthermo.pdf">
-                  slide
-                </a>
-            </li>          
-    
-            <li>
-              <p class="jpn">
-                "Coarse-graining black holes out of equilibrium with boundary observables on time slice", seminar at RIKEN iTHEMS, Apr 1st, 2024.
-              </p>
-                <a class="mgn" href="https://ithems.riken.jp/ja/events/coarse-graining-black-holes-out-of-equilibrium-with-boundary-observables-on-time-slice">
-                  web
-                </a>
-                <a class="mgn" href="slides/takeda_iTHEMS_BHthermo.pdf">
-                  slide
-                </a>
-            </li>
-
-            <li>
-              "Towards understanding black hole non-equilibrium thermodynamics", seminar at Harvard University Asian students' physics community, Mar. 22, 2023.
-              <br />
-              <a class="mgn" href="slides/takeda_Harvard_2024.pdf">
-                slide
-              </a>
-            </li>
-
-            <li>
-              <p class="jpn">
-                ``Spacetime-emergent ring toward tabletop quantum gravity experiments'', seminar (in English) at Osaka University, May 16, 2023.
-              </p>
-                <a class="mgn" href="slides/takeda_SEM_OsakaUniv.pdf">
-                  slide
-                </a>
-            </li>
-
-            <li>
-              <p class="jpn">
-                「ホログラフィックな時空へのヌル測地線生成」,立教大学理学部　理論物理学研究室　コロキウム, 2023年4月25日.
-              </p>
-                 <!-- <a class="mgn" href="">
-                   web
-                 </a> -->
-                 <a class="mgn" href="slides/takeda_shooting_rikkyo.pdf">
-                   slide
-                 </a>
-             </li>
-             <li>
-              <p class="jpn">
-                 「量子重力実験に向けた時空創発リングの探索」, 第4回CHS物理学科研究セミナー, 2022年12月15日, 日本大学文理学部.
-               </p>
-                 <!-- <a class="mgn" href="https://www.phys.chs.nihon-u.ac.jp/chs-physics-seminar">
-                   web
-                 </a> -->
-                 <a class="mgn" href="slides/takeda_nichidai_SEM_2022.pdf">
-                 slide
-               </a>
-             </li>
-          </ul>
-    </div>
-
-
-
-
-
-
+        </noscript>
+      </section>
+    </main>
   </body>
 </html>

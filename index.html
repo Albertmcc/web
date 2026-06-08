@@ -1,123 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daichi Takeda's page</title>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-    <meta name="description" content="Daichi Takeda, a student specializing in particle physics. 素粒子論を研究している竹田大地です。">
+    <meta name="description" content="Daichi Takeda, theoretical physicist working on quantum gravity, holography, AdS/CFT, and black hole thermodynamics. 素粒子論・量子重力を研究している竹田大地です。">
     <link rel="stylesheet" href="css.css">
     <meta name="google-site-verification" content="pgJelHEGymmWYP9BKYnPFWyloyjaIpqJhU7W7meHhDY" />
   </head>
 
   <body>
-    <h1><span class="mgn">
-      <img class="tarou" src="tarou.jpeg" width="50" alt="photo of my dog">
-      Daichi Takeda</span>&#150; Home &#150;
-    </h1>
-    <header>
-      <ul class="tab">
-        <li class="tab btn4 btn2">
-          <a class="noline" href="index.html">Home</a>
-        </li><br />
-        <li class="tab btn4">
-          <a class="noline" href="activities.html">Activities</a>
-        </li>
-        <!-- <br />
-        <li class="tab btn4">
-          <a class="noline" href="overview.html">Papers of Interest</a>
-        </li> -->
-      </ul>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="activities.html">Activities</a>
+      </nav>
     </header>
 
-    <div>
-      <h2>About me</h2>
-        <ul>
-        	<li>
-            Name: Daichi Takeda (竹田 大地)
-          </li>
-        	<li>
-            Affiliation: RIKEN, iTHEMS
-            (<a href="https://ithems.riken.jp/ja">web</a>)
-          </li>
-        	<li>
-              Position: Special Postdoctoral Researcher (SPDR)
-          </li>
-        	<li>
-            E-mail: takedai.gauge(at)gmail.com</a>
-          </li>
-          <!-- <li>
-            YouTube: music ch.
-            (<a href="https://www.youtube.com/channel/UC5-afmzyCzI1VMb0RJr3qIw">web</a>)
-          </li> -->
-        </ul>
-    </div>
-    
-    <div>
-      <h2>Keywords of Interest</h2>
-       <!-- <h3>Holography</h3> -->
-         <ul>
-            <li>
-              Quantum gravity
-            </li>
-            <li>
-              Holography, AdS/CFT
-            </li>
-        	  <li>
-              Bulk reconstruction
-            </li>
-            <li>
-              Black hole thermodynamics
-            </li>
-         </ul>
-       <!-- <h3>String Field Theory</h3> -->
-         <!-- <ul>
-    	      <li>
-              Classical solutions
-            </li>
-  	        <li>
-              Background independence
-            </li>
-          </ul> -->
-    </div>
-    <div>
-      <h2>Career</h2>
-        <ul>
-          <li>
-            Mar. 2020 : Bachelor of Science, Kyoto University
-          </li>
-          <li>
-            Mar. 2022 : Master of Science, Kyoto University
-          </li>
-          <li>
-            Apr. 2022 : JSPS fellow DC1
-          </li>
-          <li>
-            Mar. 2025 : Doctor of Science, Kyoto University
-          </li>
-        </ul>
-    </div>
+    <main class="page">
+      <section class="name-card">
+        <img class="avatar-large" src="tarou.jpeg" width="96" height="96" alt="photo of my dog">
+        <div>
+          <h1>Daichi Takeda</h1>
+          <p class="jpn-name">竹田 大地</p>
+        </div>
+      </section>
 
-    <div>
-      <h2>Thesis</h2>
-        <h3>Master</h3>
-          <p class="leftmgn jpn">
-            AdS/CFT対応におけるバルク時空再構築の手法の検討
-          </p>
-          <p class="leftmgn">
-            <a href="thesis/master.pdf" class="mgn">thesis</a>
-            <a class="mgn" href="thesis/master_slide.pdf">
-              slide
-            </a>
-          </p>
+      <section class="grid two-columns">
+        <article class="card">
+          <h2>About</h2>
+          <dl class="profile-list">
+            <div>
+              <dt>Affiliation</dt>
+              <dd>RIKEN, iTHEMS <a href="https://ithems.riken.jp/ja">web</a></dd>
+            </div>
+            <div>
+              <dt>Position</dt>
+              <dd>Special Postdoctoral Researcher (SPDR)</dd>
+            </div>
+            <div>
+              <dt>E-mail</dt>
+              <dd>takedai.gauge(at)gmail.com</dd>
+            </div>
+          </dl>
+        </article>
 
-        <h3>Doctor</h3>
-          <p class="leftmgn jpn">
-            Coarse-graining black holes out of equilibrium with boundary observables on time slice
-          </p>
-          <p class="leftmgn">
-            <a href="https://inspirehep.net/files/57c3d8f466fdde9179e6bd7d586620a2" class="mgn">thesis</a>
-            </a>
-          </p>
-    </div>
+        <article class="card">
+          <h2>Research keywords</h2>
+          <ul class="tag-list">
+            <li>Quantum gravity</li>
+            <li>Holography</li>
+            <li>AdS/CFT</li>
+            <li>Bulk reconstruction</li>
+            <li>Black hole thermodynamics</li>
+            <li>Non-equilibrium physics</li>
+            <li>Open quantum system</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Career</h2>
+        <ul class="career-list">
+          <li>
+            <time>Apr. 2025 – present</time>
+            <div>
+              <strong>Special Postdoctoral Researcher (SPDR)</strong>
+              <span>RIKEN iTHEMS</span>
+            </div>
+          </li>
+          <li>
+            <time>Mar. 2025</time>
+            <div>
+              <strong>Doctor of Science</strong>
+              <span>Kyoto University</span>
+            </div>
+          </li>
+          <li>
+            <time>Apr. 2022 – Mar. 2025</time>
+            <div>
+              <strong>JSPS Research Fellow DC1</strong>
+              <span>Kyoto University</span>
+            </div>
+          </li>
+          <li>
+            <time>Mar. 2022</time>
+            <div>
+              <strong>Master of Science</strong>
+              <span>Kyoto University</span>
+            </div>
+          </li>
+          <li>
+            <time>Mar. 2020</time>
+            <div>
+              <strong>Bachelor of Science</strong>
+              <span>Kyoto University</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Thesis</h2>
+
+        <div class="thesis-list">
+          <article class="thesis-item">
+            <h3>Doctoral thesis</h3>
+            <p class="thesis-title">
+              Coarse-graining black holes out of equilibrium with boundary observables on time slice
+            </p>
+            <p class="link-row">
+              <a href="https://inspirehep.net/files/57c3d8f466fdde9179e6bd7d586620a2">thesis</a>
+            </p>
+          </article>
+
+          <article class="thesis-item">
+            <h3>Master thesis</h3>
+            <p class="thesis-title jpn">
+              AdS/CFT対応におけるバルク時空再構築の手法の検討
+            </p>
+            <p class="link-row">
+              <a href="thesis/master.pdf">thesis</a>
+              <a href="thesis/master_slide.pdf">slide</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

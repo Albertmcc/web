@@ -1,0 +1,106 @@
+{
+  "international": [
+    {
+      "title": "\"Coarse-graining black holes out of equilibrium with boundary observables on time slice\"",
+      "venue": "A Day of Deep Learning and High Energy Theory, Northeastern University",
+      "date": "Mar. 21, 2024",
+      "links": [
+        {
+          "label": "web",
+          "href": "https://docs.google.com/document/d/16lCSYmWyTK-LlnzhwgxMoHnyy57tRblSgbJp3URwJRY/edit",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_northearstern_2024.pdf"
+        }
+      ]
+    }
+  ],
+  "domestic": [
+    {
+      "title": "「AdS/CFTに基づいた動的ブラックホールの粗視化エントロピーの提案」",
+      "venue": "日本物理学会 2024年年次大会, 16aWA103-9",
+      "date": "2024年9月",
+      "badges": ["学生優秀発表賞受賞"],
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_JPSautumn_BHT.pdf"
+        }
+      ]
+    },
+    {
+      "title": "\"Coarse-graining black holes out of equilibrium with boundary observables on time slice\"",
+      "venue": "場の理論と弦理論2024",
+      "date": "2024年8月7日",
+      "links": [
+        {
+          "label": "web",
+          "href": "http://www2.yukawa.kyoto-u.ac.jp/~qft.web/2024/",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_場の理論と弦理論2024.pdf"
+        }
+      ]
+    }
+  ],
+  "seminar": [
+    {
+      "title": "\"Coarse-graining black holes out of equilibrium with boundary observables on time slice\"",
+      "venue": "YITP seminar",
+      "date": "May 31st, 2024",
+      "links": [
+        {
+          "label": "web",
+          "href": "https://www.yukawa.kyoto-u.ac.jp/seminar/s53302",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_YITP_BHthermo.pdf"
+        }
+      ]
+    },
+    {
+      "title": "「AdS/CFTを用いた非平衡ブラックホールのエントロピーの提案」",
+      "venue": "中央大学 素粒子論研究室 セミナー",
+      "date": "2024年4月2日",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_chuoU_BHthermo.pdf"
+        }
+      ]
+    },
+    {
+      "title": "\"Towards understanding black hole non-equilibrium thermodynamics\"",
+      "venue": "Harvard University Asian students' physics community",
+      "date": "Mar. 22, 2024",
+      "links": [
+        {
+          "label": "slide",
+          "href": "slides/takeda_Harvard_2024.pdf"
+        }
+      ]
+    },
+    {
+      "title": "\"Coarse-graining black holes out of equilibrium with boundary observables on time slice\"",
+      "venue": "RIKEN iTHEMS seminar",
+      "date": "Apr. 1st, 2024",
+      "links": [
+        {
+          "label": "web",
+          "href": "https://ithems.riken.jp/ja/events/coarse-graining-black-holes-out-of-equilibrium-with-boundary-observables-on-time-slice",
+          "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_iTHEMS_BHthermo.pdf"
+        }
+      ]
+    }
+  ]
+}
