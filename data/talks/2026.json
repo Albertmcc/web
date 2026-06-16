@@ -31,7 +31,21 @@
       ]
     }
   ],
-  "domestic": [],
+  "domestic": [
+    {
+      "title": "\"開放量子系のホログラフィーとブラックホール\"",
+      "venue": "離散的手法による場と時空のダイナミクス",
+      "date": "September 2026",
+      "badges": ["invited"],
+      "links": [
+        {
+          "label": "web",
+          "href": "https://risanken.github.io",
+          "external": true
+        }
+      ]
+    },
+  ],
   "seminar": [
     {
       "title": "\"Cooking up holographic black holes\"",
