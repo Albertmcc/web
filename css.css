@@ -1,24 +1,23 @@
 :root {
-  --bg: #141a17;
-  --green: #2e8b57;
-  --green-soft: #8fd6ab;
-  --green-bright: #6fc999;
-  --green-deep: #0f2a1d;
-  --surface: #1e2723;
-  --surface-2: #27302b;
-  --ink: #e8ebe7;
-  --ink-soft: #a9b3ad;
-  --muted: #a9b3ad;
-  --line: rgba(255, 255, 255, 0.10);
-  --line-strong: rgba(255, 255, 255, 0.16);
-  --green-tint: rgba(111, 201, 153, 0.14);
-  --green-tint-strong: rgba(111, 201, 153, 0.24);
+  --bg: #d7dccf;
+  --green: #236840;
+  --green-deep: #1f5e3a;
+  --green-bright: #2e8b57;
+  --surface: #edefe8;
+  --surface-2: #e4e7dd;
+  --ink: #232b26;
+  --ink-soft: #56615a;
+  --muted: #56615a;
+  --line: rgba(35, 43, 38, 0.12);
+  --line-strong: rgba(35, 43, 38, 0.20);
+  --green-tint: rgba(46, 139, 87, 0.12);
+  --green-tint-strong: rgba(46, 139, 87, 0.22);
   --accent: #ffe4b5;
-  --accent-strong: #d9a441;
-  --link: #7cc4ef;
-  --link-hover: #a9d8f5;
-  --shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
-  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.30);
+  --accent-strong: #c79433;
+  --link: #15619a;
+  --link-hover: #0d3f63;
+  --shadow: 0 14px 34px rgba(35, 43, 38, 0.16);
+  --shadow-soft: 0 7px 20px rgba(35, 43, 38, 0.09);
   --font-serif: Georgia, "Times New Roman", "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", serif;
   --font-body: Georgia, "Times New Roman", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
 }
@@ -35,9 +34,9 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(46, 139, 87, 0.13), transparent 32rem),
-    radial-gradient(circle at bottom right, rgba(46, 139, 87, 0.07), transparent 34rem),
-    linear-gradient(160deg, #18201b 0%, #121815 55%, #0e1310 100%);
+    radial-gradient(circle at top left, rgba(46, 139, 87, 0.12), transparent 32rem),
+    radial-gradient(circle at bottom right, rgba(46, 139, 87, 0.08), transparent 34rem),
+    linear-gradient(160deg, #dde2d6 0%, #d6dbce 55%, #cfd4c6 100%);
   background-attachment: fixed;
   font-family: var(--font-body);
   line-height: 1.7;
@@ -49,8 +48,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+    linear-gradient(rgba(35, 43, 38, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(35, 43, 38, 0.035) 1px, transparent 1px);
   background-size: 46px 46px;
   mask-image: linear-gradient(to bottom, black, transparent 78%);
 }
@@ -73,7 +72,7 @@ a:hover {
   justify-content: flex-end;
   padding: 1rem clamp(1rem, 4vw, 3rem);
   border-bottom: 1px solid var(--line);
-  background: rgba(18, 24, 21, 0.72);
+  background: rgba(215, 220, 207, 0.8);
   backdrop-filter: blur(14px);
 }
 
@@ -83,7 +82,7 @@ a:hover {
   padding: 0.28rem;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.4);
   box-shadow: var(--shadow-soft);
 }
 
@@ -102,8 +101,8 @@ a:hover {
 }
 
 .site-nav a.active {
-  color: #0f1712;
-  background: var(--green-soft);
+  color: #ffffff;
+  background: var(--green);
 }
 
 .page {
@@ -112,7 +111,7 @@ a:hover {
   padding: 2.4rem 0 5rem;
 }
 
-/* Hero */
+/* Hero — same material as the cards, green only as accent */
 
 .name-card {
   display: flex;
@@ -120,17 +119,15 @@ a:hover {
   gap: 1.4rem;
   padding: clamp(1.4rem, 4vw, 2.2rem);
   margin-bottom: 1.4rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--line);
   border-radius: 28px;
-  background:
-    linear-gradient(135deg, #2a8050, #184f33),
-    radial-gradient(circle at 90% 10%, rgba(255, 228, 181, 0.16), transparent 18rem);
-  color: #f3f6f3;
-  box-shadow: var(--shadow);
+  background: linear-gradient(135deg, #e7efe8, #eef0e9);
+  color: var(--ink);
+  box-shadow: var(--shadow-soft);
 }
 
 .name-card h1 {
-  color: #ffffff;
+  color: var(--ink);
 }
 
 .avatar-large {
@@ -140,8 +137,8 @@ a:hover {
   border-radius: 50%;
   object-fit: cover;
   object-position: center 42%;
-  border: 3px solid rgba(255, 255, 255, 0.82);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  border: 3px solid rgba(46, 139, 87, 0.45);
+  box-shadow: 0 8px 20px rgba(35, 43, 38, 0.18);
 }
 
 h1,
@@ -169,7 +166,7 @@ h1 {
 h2 {
   display: inline-block;
   margin-bottom: 1.05rem;
-  color: var(--green-soft);
+  color: var(--green);
   font-size: 1.35rem;
   line-height: 1.25;
   letter-spacing: -0.015em;
@@ -188,7 +185,7 @@ h2::after {
 h3 {
   display: inline-block;
   margin: 0 0 1.2rem;
-  color: var(--green-soft);
+  color: var(--green);
   font-size: 1.25rem;
   line-height: 1.25;
 }
@@ -206,7 +203,7 @@ h3::after {
 h4 {
   display: inline-block;
   margin: 0 0 0.8rem;
-  color: var(--green-soft);
+  color: var(--green);
   font-size: 1.02rem;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -229,7 +226,7 @@ p {
 .jpn-name {
   margin: 0;
   font-family: var(--font-serif);
-  color: #eef5f0;
+  color: var(--green);
   font-size: clamp(1rem, 2vw, 1.25rem);
   letter-spacing: 0.18em;
 }
@@ -281,7 +278,7 @@ p {
 }
 
 dt {
-  color: var(--green-soft);
+  color: var(--green);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.11em;
@@ -309,7 +306,7 @@ dd {
   border: 1px solid var(--green-tint-strong);
   border-radius: 999px;
   background: var(--green-tint);
-  color: var(--green-soft);
+  color: var(--green-deep);
   font-size: 0.92rem;
   font-weight: 700;
 }
@@ -338,7 +335,7 @@ dd {
 }
 
 .career-list time {
-  color: var(--green-soft);
+  color: var(--green);
   font-size: 0.92rem;
   font-weight: 800;
 }
@@ -371,7 +368,7 @@ dd {
 
 .thesis-item h3 {
   margin-bottom: 0.35rem;
-  color: var(--green-soft);
+  color: var(--green);
   font-size: 0.98rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -413,8 +410,8 @@ dd {
 }
 
 .link-row a:hover {
-  border-color: rgba(111, 201, 153, 0.5);
-  background: rgba(111, 201, 153, 0.2);
+  border-color: rgba(46, 139, 87, 0.45);
+  background: rgba(46, 139, 87, 0.18);
   color: var(--link-hover);
 }
 
@@ -456,8 +453,8 @@ dd {
   padding: 0.42rem 0.9rem;
   border: 1px solid var(--green-tint-strong);
   border-radius: 999px;
-  background: var(--surface-2);
-  color: var(--green-soft);
+  background: var(--green-tint);
+  color: var(--green-deep);
   font-family: inherit;
   font-size: 0.96rem;
   font-weight: 800;
@@ -466,7 +463,7 @@ dd {
 }
 
 .year-dropdown-button:hover {
-  background: #2f3a33;
+  background: rgba(46, 139, 87, 0.18);
 }
 
 .dropdown-arrow {
@@ -515,13 +512,13 @@ dd {
 }
 
 .year-option:hover {
-  color: var(--green-soft);
+  color: var(--green-deep);
   background: var(--green-tint);
 }
 
 .year-option.active {
-  color: #0f1712;
-  background: var(--green-soft);
+  color: #ffffff;
+  background: var(--green);
 }
 
 .year-panels {
@@ -571,7 +568,7 @@ dd {
   border: 1px solid var(--green-tint-strong);
   border-radius: 999px;
   background: var(--green-tint);
-  color: var(--green-soft);
+  color: var(--green-deep);
   font-size: 0.8rem;
   font-weight: 800;
 }
@@ -583,7 +580,7 @@ dd {
   border: 1px dashed var(--line-strong);
   border-radius: 14px;
   color: var(--ink-soft);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(35, 43, 38, 0.04);
   font-style: italic;
 }
 
@@ -635,14 +632,14 @@ a.title:link,
 a.title:visited,
 a.title:active,
 a.title:hover {
-  color: var(--accent);
+  color: var(--green);
 }
 
 a.jump:link,
 a.jump:visited,
 a.jump:active {
   color: var(--ink);
-  text-decoration-color: var(--green-soft);
+  text-decoration-color: var(--green);
 }
 
 a.jump:hover {
