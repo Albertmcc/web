@@ -10,6 +10,10 @@
           "label": "web",
           "href": "https://sites.google.com/view/holo-asia2026/home",
           "external": true
+        },
+        {
+          "label": "slide",
+          "href": "slides/takeda_HQBM_Holo_Asia.pdf"
         }
       ]
     },
@@ -44,7 +48,7 @@
           "external": true
         }
       ]
-    },
+    }
   ],
   "seminar": [
     {
