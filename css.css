@@ -127,7 +127,7 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 28px;
   background:
-    linear-gradient(135deg, rgba(46, 139, 87, 0.98), rgba(28, 100, 63, 0.98)),
+    linear-gradient(135deg, #2a8050, #1c613f),
     radial-gradient(circle at 90% 10%, rgba(255, 228, 181, 0.30), transparent 18rem);
   color: #ffffff;
   box-shadow: var(--shadow);
@@ -233,7 +233,7 @@ p {
 .jpn-name {
   margin: 0;
   font-family: var(--font-serif);
-  color: rgba(255, 255, 255, 0.92);
+  color: #ffffff;
   font-size: clamp(1rem, 2vw, 1.25rem);
   letter-spacing: 0.18em;
 }
