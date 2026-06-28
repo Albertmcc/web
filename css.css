@@ -657,52 +657,6 @@ a.jump:hover {
   text-decoration: none;
 }
 
-/* Print */
-
-@media print {
-  body {
-    background: #ffffff;
-    color: #000000;
-  }
-
-  body::before {
-    display: none;
-  }
-
-  .site-header {
-    display: none;
-  }
-
-  .name-card {
-    background: #ffffff;
-    color: #000000;
-    border: 1px solid #999999;
-    box-shadow: none;
-  }
-
-  .name-card h1,
-  .jpn-name {
-    color: #000000;
-  }
-
-  .card {
-    border: 1px solid #cccccc;
-    box-shadow: none;
-    break-inside: avoid;
-  }
-
-  a {
-    color: #000000;
-  }
-
-  .link-row a[href]::after,
-  .talk-title + .talk-meta + .link-row a[href^="http"]::after {
-    content: " (" attr(href) ")";
-    font-size: 0.78em;
-    font-weight: 400;
-  }
-}
-
 /* Mobile */
 
 @media (max-width: 760px) {
